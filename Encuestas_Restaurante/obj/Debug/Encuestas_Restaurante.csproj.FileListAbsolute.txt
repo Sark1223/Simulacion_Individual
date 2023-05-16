@@ -11,3 +11,6 @@ C:\Users\perro\OneDrive - tec tijuana\Simulacion_Individual\Encuestas_Restaurant
 C:\Users\perro\OneDrive - tec tijuana\Simulacion_Individual\Encuestas_Restaurante\obj\Debug\Encuestas_Restaurante.csproj.CopyComplete
 C:\Users\perro\OneDrive - tec tijuana\Simulacion_Individual\Encuestas_Restaurante\obj\Debug\Encuestas_Restaurante.exe
 C:\Users\perro\OneDrive - tec tijuana\Simulacion_Individual\Encuestas_Restaurante\obj\Debug\Encuestas_Restaurante.pdb
+C:\Users\perro\OneDrive - tec tijuana\Simulacion_Individual\Encuestas_Restaurante\obj\Debug\Encuestas_Restaurante.frmHistorial.resources
+C:\Users\perro\OneDrive - tec tijuana\Simulacion_Individual\Encuestas_Restaurante\obj\Debug\Encuestas_Restaurante.frmNumeros.resources
+C:\Users\perro\OneDrive - tec tijuana\Simulacion_Individual\Encuestas_Restaurante\obj\Debug\Encuestas_Restaurante.frmPruebas.resources

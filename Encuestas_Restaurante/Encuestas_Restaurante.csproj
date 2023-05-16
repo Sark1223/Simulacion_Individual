@@ -50,16 +50,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistorial.Designer.cs">
+      <DependentUpon>frmHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNumeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNumeros.Designer.cs">
+      <DependentUpon>frmNumeros.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProblema.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmProblema.Designer.cs">
       <DependentUpon>frmProblema.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPruebas.Designer.cs">
+      <DependentUpon>frmPruebas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmHistorial.resx">
+      <DependentUpon>frmHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNumeros.resx">
+      <DependentUpon>frmNumeros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmProblema.resx">
       <DependentUpon>frmProblema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPruebas.resx">
+      <DependentUpon>frmPruebas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

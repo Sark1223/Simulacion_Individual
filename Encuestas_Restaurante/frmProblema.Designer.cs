@@ -44,7 +44,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnDatos = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.bunifuSeparator2 = new ns1.BunifuSeparator();
             this.pnProblema = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.rdDatos = new ns1.BunifuElipse(this.components);
@@ -83,8 +85,6 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.bunifuSeparator1 = new ns1.BunifuSeparator();
-            this.label11 = new System.Windows.Forms.Label();
-            this.bunifuSeparator2 = new ns1.BunifuSeparator();
             this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cmdSimularEncuestas = new System.Windows.Forms.Button();
@@ -181,6 +181,7 @@
             this.cmdHistorial.Size = new System.Drawing.Size(181, 41);
             this.cmdHistorial.TabIndex = 8;
             this.cmdHistorial.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cmdHistorial.Click += new System.EventHandler(this.cmdHistorial_Click);
             // 
             // cmdVerPruebas
             // 
@@ -282,6 +283,17 @@
             this.pnDatos.Size = new System.Drawing.Size(603, 196);
             this.pnDatos.TabIndex = 9;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Firebrick;
+            this.label11.Location = new System.Drawing.Point(240, 6);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(107, 23);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "PROBLEMA";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -291,6 +303,18 @@
             this.label4.Size = new System.Drawing.Size(537, 147);
             this.label4.TabIndex = 13;
             this.label4.Text = resources.GetString("label4.Text");
+            // 
+            // bunifuSeparator2
+            // 
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator2.LineThickness = 2;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(25, 11);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Size = new System.Drawing.Size(543, 10);
+            this.bunifuSeparator2.TabIndex = 14;
+            this.bunifuSeparator2.Transparency = 255;
+            this.bunifuSeparator2.Vertical = false;
             // 
             // pnProblema
             // 
@@ -735,29 +759,6 @@
             this.bunifuSeparator1.TabIndex = 46;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Firebrick;
-            this.label11.Location = new System.Drawing.Point(240, 6);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(107, 23);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "PROBLEMA";
-            // 
-            // bunifuSeparator2
-            // 
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.White;
-            this.bunifuSeparator2.LineThickness = 2;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(25, 11);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(543, 10);
-            this.bunifuSeparator2.TabIndex = 14;
-            this.bunifuSeparator2.Transparency = 255;
-            this.bunifuSeparator2.Vertical = false;
             // 
             // label12
             // 

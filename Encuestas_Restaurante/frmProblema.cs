@@ -60,5 +60,10 @@ namespace Encuestas_Restaurante
                 pruebas.ShowDialog();
             }
         }
+
+        private void cmdHistorial_Click(object sender, EventArgs e)
+        {
+            historial.ShowDialog();
+        }
     }
 }

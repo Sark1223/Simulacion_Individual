@@ -106,7 +106,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label19.Location = new System.Drawing.Point(305, 3);
+            this.label19.Location = new System.Drawing.Point(283, 6);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(84, 16);
             this.label19.TabIndex = 2;
@@ -122,6 +122,7 @@
             this.panTop.Name = "panTop";
             this.panTop.Size = new System.Drawing.Size(652, 39);
             this.panTop.TabIndex = 20;
+            this.panTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mover);
             // 
             // lblTitulo
             // 
@@ -146,6 +147,7 @@
             this.btnCerrar.TabIndex = 10;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Zoom = 10;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // panel6
             // 
@@ -339,13 +341,13 @@
             // 
             // cmdGenerar
             // 
-            this.cmdGenerar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.cmdGenerar.Location = new System.Drawing.Point(91, 380);
             this.cmdGenerar.Name = "cmdGenerar";
             this.cmdGenerar.Size = new System.Drawing.Size(160, 32);
             this.cmdGenerar.TabIndex = 40;
             this.cmdGenerar.Text = "GENERAR";
             this.cmdGenerar.UseVisualStyleBackColor = true;
+            this.cmdGenerar.Click += new System.EventHandler(this.cmdGenerar_Click);
             // 
             // tblPseudo
             // 
@@ -360,9 +362,9 @@
             this.tblPseudo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.tblPseudo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(190)))), ((int)(((byte)(234)))));
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(94)))), ((int)(((byte)(191)))));
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(190)))), ((int)(((byte)(234)))));
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;

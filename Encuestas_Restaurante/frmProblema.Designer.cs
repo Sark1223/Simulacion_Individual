@@ -30,16 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProblema));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnEncabezado = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmdCerrar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.rdForma = new ns1.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.cmdHistorial = new ns1.BunifuThinButton2();
             this.cmdVerPruebas = new ns1.BunifuThinButton2();
             this.cmdGenerarNumeros = new ns1.BunifuThinButton2();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.rdEncabezado = new ns1.BunifuElipse(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -51,7 +53,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.rdDatos = new ns1.BunifuElipse(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -66,58 +67,90 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtComidaM = new System.Windows.Forms.TextBox();
+            this.txtComidaE = new System.Windows.Forms.TextBox();
             this.txtComidaF = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.txtLimpiezaL = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtLimpiezaA = new System.Windows.Forms.TextBox();
             this.txtLimpiezaS = new System.Windows.Forms.TextBox();
             this.cmdConfirmarSer = new System.Windows.Forms.Button();
             this.cmdConfirmarCom = new System.Windows.Forms.Button();
             this.cmdConfirmarLimpi = new System.Windows.Forms.Button();
+            this.txtSuma1 = new System.Windows.Forms.TextBox();
+            this.txtTotal1 = new System.Windows.Forms.TextBox();
             this.txtSuma2 = new System.Windows.Forms.TextBox();
             this.txtTotal2 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.txtSuma3 = new System.Windows.Forms.TextBox();
+            this.txtTotal3 = new System.Windows.Forms.TextBox();
             this.bunifuSeparator1 = new ns1.BunifuSeparator();
             this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.cmdSimularEncuestas = new System.Windows.Forms.Button();
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
+            this.rdConfirmar1 = new ns1.BunifuElipse(this.components);
+            this.rdConfirmar2 = new ns1.BunifuElipse(this.components);
+            this.rdConfirmar3 = new ns1.BunifuElipse(this.components);
+            this.rdSimular = new ns1.BunifuElipse(this.components);
+            this.pnResultados = new System.Windows.Forms.Panel();
+            this.pnConclusionG = new System.Windows.Forms.Panel();
+            this.txtConclusionGeneral = new System.Windows.Forms.TextBox();
+            this.separador = new ns1.BunifuSeparator();
+            this.lblComida = new System.Windows.Forms.Label();
+            this.lblLimpieza = new System.Windows.Forms.Label();
+            this.lblMeseros = new System.Windows.Forms.Label();
+            this.dgvResultados = new System.Windows.Forms.DataGridView();
+            this.Dia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.a = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.lblTitleExperimento = new ns1.BunifuCustomLabel();
+            this.pnexperimento = new System.Windows.Forms.Panel();
+            this.rdConclusionG = new ns1.BunifuElipse(this.components);
+            this.panel5 = new System.Windows.Forms.Panel();
             this.pnEncabezado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnDatos.SuspendLayout();
             this.pnProblema.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
+            this.pnResultados.SuspendLayout();
+            this.pnConclusionG.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnEncabezado
             // 
             this.pnEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(153)))));
-            this.pnEncabezado.Controls.Add(this.pictureBox1);
+            this.pnEncabezado.Controls.Add(this.cmdCerrar);
             this.pnEncabezado.Controls.Add(this.label1);
             this.pnEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnEncabezado.Location = new System.Drawing.Point(117, 0);
             this.pnEncabezado.Name = "pnEncabezado";
-            this.pnEncabezado.Size = new System.Drawing.Size(815, 54);
+            this.pnEncabezado.Size = new System.Drawing.Size(814, 54);
             this.pnEncabezado.TabIndex = 3;
+            this.pnEncabezado.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mover);
             // 
-            // pictureBox1
+            // cmdCerrar
             // 
-            this.pictureBox1.Image = global::Encuestas_Restaurante.Properties.Resources.marca_x_Blanca;
-            this.pictureBox1.Location = new System.Drawing.Point(778, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.cmdCerrar.Image = global::Encuestas_Restaurante.Properties.Resources.marca_x_Blanca;
+            this.cmdCerrar.Location = new System.Drawing.Point(778, 14);
+            this.cmdCerrar.Name = "cmdCerrar";
+            this.cmdCerrar.Size = new System.Drawing.Size(32, 28);
+            this.cmdCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cmdCerrar.TabIndex = 1;
+            this.cmdCerrar.TabStop = false;
+            this.cmdCerrar.Click += new System.EventHandler(this.cmdCerrar_Click);
             // 
             // label1
             // 
@@ -137,25 +170,17 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.cmdHistorial);
             this.panel1.Controls.Add(this.cmdVerPruebas);
             this.panel1.Controls.Add(this.cmdGenerarNumeros);
             this.panel1.Controls.Add(this.pnEncabezado);
             this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(932, 96);
+            this.panel1.Size = new System.Drawing.Size(931, 96);
             this.panel1.TabIndex = 6;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(153)))));
-            this.panel3.Location = new System.Drawing.Point(931, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(20, 53);
-            this.panel3.TabIndex = 9;
             // 
             // cmdHistorial
             // 
@@ -246,6 +271,14 @@
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(153)))));
+            this.panel3.Location = new System.Drawing.Point(921, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(20, 53);
+            this.panel3.TabIndex = 9;
+            // 
             // rdEncabezado
             // 
             this.rdEncabezado.ElipseRadius = 20;
@@ -255,7 +288,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(41, 56);
+            this.label2.Location = new System.Drawing.Point(41, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(862, 42);
             this.label2.TabIndex = 7;
@@ -320,18 +353,19 @@
             // 
             this.pnProblema.Controls.Add(this.pnDatos);
             this.pnProblema.Controls.Add(this.pictureBox3);
-            this.pnProblema.Location = new System.Drawing.Point(3, 96);
+            this.pnProblema.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnProblema.Location = new System.Drawing.Point(0, 96);
             this.pnProblema.Name = "pnProblema";
-            this.pnProblema.Size = new System.Drawing.Size(924, 215);
+            this.pnProblema.Size = new System.Drawing.Size(931, 215);
             this.pnProblema.TabIndex = 10;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(190)))), ((int)(((byte)(234)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 1004);
+            this.panel4.Location = new System.Drawing.Point(0, 1928);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(932, 25);
+            this.panel4.Size = new System.Drawing.Size(931, 25);
             this.panel4.TabIndex = 11;
             // 
             // rdDatos
@@ -343,27 +377,17 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Candara Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(48, 148);
+            this.label3.Location = new System.Drawing.Point(48, 126);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 69);
             this.label3.TabIndex = 12;
             this.label3.Text = "Buena\r\nMala\r\nExcelente";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Candara Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(103, 935);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 69);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Buena\r\nMala\r\nExcelente";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(41, 115);
+            this.label6.Location = new System.Drawing.Point(41, 93);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(248, 23);
             this.label6.TabIndex = 14;
@@ -373,7 +397,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(348, 115);
+            this.label7.Location = new System.Drawing.Point(348, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(257, 23);
             this.label7.TabIndex = 16;
@@ -383,7 +407,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Candara Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(348, 148);
+            this.label8.Location = new System.Drawing.Point(348, 126);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(188, 69);
             this.label8.TabIndex = 15;
@@ -393,7 +417,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(671, 115);
+            this.label9.Location = new System.Drawing.Point(671, 93);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(208, 23);
             this.label9.TabIndex = 18;
@@ -403,7 +427,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Candara Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(671, 148);
+            this.label10.Location = new System.Drawing.Point(671, 126);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(92, 69);
             this.label10.TabIndex = 17;
@@ -415,7 +439,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(227, 190);
+            this.textBox3.Location = new System.Drawing.Point(227, 168);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(20, 22);
             this.textBox3.TabIndex = 24;
@@ -428,7 +452,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(227, 169);
+            this.textBox4.Location = new System.Drawing.Point(227, 147);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(20, 22);
             this.textBox4.TabIndex = 23;
@@ -441,7 +465,7 @@
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.textBox5.ForeColor = System.Drawing.Color.Black;
-            this.textBox5.Location = new System.Drawing.Point(227, 148);
+            this.textBox5.Location = new System.Drawing.Point(227, 126);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(20, 22);
             this.textBox5.TabIndex = 22;
@@ -454,12 +478,15 @@
             this.txtMeserosM.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMeserosM.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.txtMeserosM.ForeColor = System.Drawing.Color.Black;
-            this.txtMeserosM.Location = new System.Drawing.Point(230, 169);
+            this.txtMeserosM.Location = new System.Drawing.Point(230, 147);
             this.txtMeserosM.Name = "txtMeserosM";
             this.txtMeserosM.Size = new System.Drawing.Size(56, 22);
             this.txtMeserosM.TabIndex = 20;
-            this.txtMeserosM.Text = "10";
+            this.txtMeserosM.Text = "35";
             this.txtMeserosM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMeserosM.TextChanged += new System.EventHandler(this.txtMeserosM_TextChanged);
+            this.txtMeserosM.Validating += new System.ComponentModel.CancelEventHandler(this.txtMeserosM_Validating);
+            this.txtMeserosM.Validated += new System.EventHandler(this.txtMeserosM_Validated);
             // 
             // txtMeserosE
             // 
@@ -467,12 +494,15 @@
             this.txtMeserosE.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMeserosE.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.txtMeserosE.ForeColor = System.Drawing.Color.Black;
-            this.txtMeserosE.Location = new System.Drawing.Point(230, 190);
+            this.txtMeserosE.Location = new System.Drawing.Point(230, 168);
             this.txtMeserosE.Name = "txtMeserosE";
             this.txtMeserosE.Size = new System.Drawing.Size(56, 22);
             this.txtMeserosE.TabIndex = 21;
             this.txtMeserosE.Text = "25";
             this.txtMeserosE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMeserosE.TextChanged += new System.EventHandler(this.txtMeserosE_TextChanged);
+            this.txtMeserosE.Validating += new System.ComponentModel.CancelEventHandler(this.txtMeserosE_Validating);
+            this.txtMeserosE.Validated += new System.EventHandler(this.txtMeserosE_Validated);
             // 
             // txtMeserosB
             // 
@@ -480,12 +510,15 @@
             this.txtMeserosB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMeserosB.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.txtMeserosB.ForeColor = System.Drawing.Color.Black;
-            this.txtMeserosB.Location = new System.Drawing.Point(230, 148);
+            this.txtMeserosB.Location = new System.Drawing.Point(230, 126);
             this.txtMeserosB.Name = "txtMeserosB";
             this.txtMeserosB.Size = new System.Drawing.Size(56, 22);
             this.txtMeserosB.TabIndex = 19;
-            this.txtMeserosB.Text = "5";
+            this.txtMeserosB.Text = "40";
             this.txtMeserosB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMeserosB.TextChanged += new System.EventHandler(this.txtMeserosB_TextChanged);
+            this.txtMeserosB.Validating += new System.ComponentModel.CancelEventHandler(this.txtMeserosB_Validating);
+            this.txtMeserosB.Validated += new System.EventHandler(this.txtMeserosB_Validated);
             // 
             // textBox1
             // 
@@ -493,7 +526,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(549, 190);
+            this.textBox1.Location = new System.Drawing.Point(549, 168);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(20, 22);
             this.textBox1.TabIndex = 30;
@@ -506,7 +539,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(549, 169);
+            this.textBox2.Location = new System.Drawing.Point(549, 147);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(20, 22);
             this.textBox2.TabIndex = 29;
@@ -519,38 +552,44 @@
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(549, 148);
+            this.textBox6.Location = new System.Drawing.Point(549, 126);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(20, 22);
             this.textBox6.TabIndex = 28;
             this.textBox6.Text = "0.";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox7
+            // txtComidaM
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
-            this.textBox7.ForeColor = System.Drawing.Color.Black;
-            this.textBox7.Location = new System.Drawing.Point(554, 169);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(56, 22);
-            this.textBox7.TabIndex = 26;
-            this.textBox7.Text = "10";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtComidaM.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtComidaM.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtComidaM.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
+            this.txtComidaM.ForeColor = System.Drawing.Color.Black;
+            this.txtComidaM.Location = new System.Drawing.Point(554, 147);
+            this.txtComidaM.Name = "txtComidaM";
+            this.txtComidaM.Size = new System.Drawing.Size(56, 22);
+            this.txtComidaM.TabIndex = 26;
+            this.txtComidaM.Text = "35";
+            this.txtComidaM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtComidaM.TextChanged += new System.EventHandler(this.txtComidaM_TextChanged);
+            this.txtComidaM.Validating += new System.ComponentModel.CancelEventHandler(this.txtComidaM_Validating);
+            this.txtComidaM.Validated += new System.EventHandler(this.txtComidaM_Validated);
             // 
-            // textBox8
+            // txtComidaE
             // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
-            this.textBox8.ForeColor = System.Drawing.Color.Black;
-            this.textBox8.Location = new System.Drawing.Point(554, 190);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(56, 22);
-            this.textBox8.TabIndex = 27;
-            this.textBox8.Text = "25";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtComidaE.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtComidaE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtComidaE.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
+            this.txtComidaE.ForeColor = System.Drawing.Color.Black;
+            this.txtComidaE.Location = new System.Drawing.Point(554, 168);
+            this.txtComidaE.Name = "txtComidaE";
+            this.txtComidaE.Size = new System.Drawing.Size(56, 22);
+            this.txtComidaE.TabIndex = 27;
+            this.txtComidaE.Text = "45";
+            this.txtComidaE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtComidaE.TextChanged += new System.EventHandler(this.txtComidaE_TextChanged);
+            this.txtComidaE.Validating += new System.ComponentModel.CancelEventHandler(this.txtComidaE_Validating);
+            this.txtComidaE.Validated += new System.EventHandler(this.txtComidaE_Validated);
             // 
             // txtComidaF
             // 
@@ -558,12 +597,15 @@
             this.txtComidaF.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtComidaF.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.txtComidaF.ForeColor = System.Drawing.Color.Black;
-            this.txtComidaF.Location = new System.Drawing.Point(554, 148);
+            this.txtComidaF.Location = new System.Drawing.Point(554, 126);
             this.txtComidaF.Name = "txtComidaF";
             this.txtComidaF.Size = new System.Drawing.Size(56, 22);
             this.txtComidaF.TabIndex = 25;
-            this.txtComidaF.Text = "5";
+            this.txtComidaF.Text = "20";
             this.txtComidaF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtComidaF.TextChanged += new System.EventHandler(this.txtComidaF_TextChanged);
+            this.txtComidaF.Validating += new System.ComponentModel.CancelEventHandler(this.txtComidaF_Validating);
+            this.txtComidaF.Validated += new System.EventHandler(this.txtComidaF_Validated);
             // 
             // textBox10
             // 
@@ -571,7 +613,7 @@
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox10.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.textBox10.ForeColor = System.Drawing.Color.Black;
-            this.textBox10.Location = new System.Drawing.Point(828, 190);
+            this.textBox10.Location = new System.Drawing.Point(828, 168);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(20, 22);
             this.textBox10.TabIndex = 36;
@@ -584,7 +626,7 @@
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox11.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.textBox11.ForeColor = System.Drawing.Color.Black;
-            this.textBox11.Location = new System.Drawing.Point(828, 169);
+            this.textBox11.Location = new System.Drawing.Point(828, 147);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(20, 22);
             this.textBox11.TabIndex = 35;
@@ -597,7 +639,7 @@
             this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox12.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.textBox12.ForeColor = System.Drawing.Color.Black;
-            this.textBox12.Location = new System.Drawing.Point(828, 148);
+            this.textBox12.Location = new System.Drawing.Point(827, 126);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(20, 22);
             this.textBox12.TabIndex = 34;
@@ -610,25 +652,31 @@
             this.txtLimpiezaL.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLimpiezaL.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.txtLimpiezaL.ForeColor = System.Drawing.Color.Black;
-            this.txtLimpiezaL.Location = new System.Drawing.Point(828, 169);
+            this.txtLimpiezaL.Location = new System.Drawing.Point(828, 147);
             this.txtLimpiezaL.Name = "txtLimpiezaL";
             this.txtLimpiezaL.Size = new System.Drawing.Size(56, 22);
             this.txtLimpiezaL.TabIndex = 32;
-            this.txtLimpiezaL.Text = "10";
+            this.txtLimpiezaL.Text = "32";
             this.txtLimpiezaL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLimpiezaL.TextChanged += new System.EventHandler(this.txtLimpiezaL_TextChanged);
+            this.txtLimpiezaL.Validating += new System.ComponentModel.CancelEventHandler(this.txtLimpiezaL_Validating);
+            this.txtLimpiezaL.Validated += new System.EventHandler(this.txtLimpiezaL_Validated);
             // 
-            // textBox14
+            // txtLimpiezaA
             // 
-            this.textBox14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
-            this.textBox14.ForeColor = System.Drawing.Color.Black;
-            this.textBox14.Location = new System.Drawing.Point(828, 190);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(56, 22);
-            this.textBox14.TabIndex = 33;
-            this.textBox14.Text = "25";
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLimpiezaA.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtLimpiezaA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtLimpiezaA.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
+            this.txtLimpiezaA.ForeColor = System.Drawing.Color.Black;
+            this.txtLimpiezaA.Location = new System.Drawing.Point(831, 168);
+            this.txtLimpiezaA.Name = "txtLimpiezaA";
+            this.txtLimpiezaA.Size = new System.Drawing.Size(56, 22);
+            this.txtLimpiezaA.TabIndex = 33;
+            this.txtLimpiezaA.Text = "48";
+            this.txtLimpiezaA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLimpiezaA.TextChanged += new System.EventHandler(this.txtLimpiezaA_TextChanged);
+            this.txtLimpiezaA.Validating += new System.ComponentModel.CancelEventHandler(this.txtLimpiezaA_Validating);
+            this.txtLimpiezaA.Validated += new System.EventHandler(this.txtLimpiezaA_Validated);
             // 
             // txtLimpiezaS
             // 
@@ -636,39 +684,92 @@
             this.txtLimpiezaS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLimpiezaS.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.txtLimpiezaS.ForeColor = System.Drawing.Color.Black;
-            this.txtLimpiezaS.Location = new System.Drawing.Point(828, 148);
+            this.txtLimpiezaS.Location = new System.Drawing.Point(831, 126);
             this.txtLimpiezaS.Name = "txtLimpiezaS";
             this.txtLimpiezaS.Size = new System.Drawing.Size(56, 22);
             this.txtLimpiezaS.TabIndex = 31;
-            this.txtLimpiezaS.Text = "5";
+            this.txtLimpiezaS.Text = "20";
             this.txtLimpiezaS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLimpiezaS.TextChanged += new System.EventHandler(this.txtLimpiezaS_TextChanged);
+            this.txtLimpiezaS.Validating += new System.ComponentModel.CancelEventHandler(this.txtLimpiezaS_Validating);
+            this.txtLimpiezaS.Validated += new System.EventHandler(this.txtLimpiezaS_Validated);
             // 
             // cmdConfirmarSer
             // 
-            this.cmdConfirmarSer.Location = new System.Drawing.Point(130, 241);
+            this.cmdConfirmarSer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(153)))));
+            this.cmdConfirmarSer.FlatAppearance.BorderSize = 0;
+            this.cmdConfirmarSer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(153)))));
+            this.cmdConfirmarSer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cmdConfirmarSer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdConfirmarSer.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdConfirmarSer.ForeColor = System.Drawing.Color.White;
+            this.cmdConfirmarSer.Location = new System.Drawing.Point(112, 219);
             this.cmdConfirmarSer.Name = "cmdConfirmarSer";
-            this.cmdConfirmarSer.Size = new System.Drawing.Size(57, 31);
+            this.cmdConfirmarSer.Size = new System.Drawing.Size(104, 31);
             this.cmdConfirmarSer.TabIndex = 37;
-            this.cmdConfirmarSer.Text = "Confi";
-            this.cmdConfirmarSer.UseVisualStyleBackColor = true;
+            this.cmdConfirmarSer.Text = "Confirmar";
+            this.cmdConfirmarSer.UseVisualStyleBackColor = false;
+            this.cmdConfirmarSer.Click += new System.EventHandler(this.cmdConfirmarSer_Click);
             // 
             // cmdConfirmarCom
             // 
-            this.cmdConfirmarCom.Location = new System.Drawing.Point(449, 241);
+            this.cmdConfirmarCom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(153)))));
+            this.cmdConfirmarCom.FlatAppearance.BorderSize = 0;
+            this.cmdConfirmarCom.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(153)))));
+            this.cmdConfirmarCom.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cmdConfirmarCom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdConfirmarCom.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdConfirmarCom.ForeColor = System.Drawing.Color.White;
+            this.cmdConfirmarCom.Location = new System.Drawing.Point(417, 219);
             this.cmdConfirmarCom.Name = "cmdConfirmarCom";
-            this.cmdConfirmarCom.Size = new System.Drawing.Size(57, 31);
+            this.cmdConfirmarCom.Size = new System.Drawing.Size(104, 31);
             this.cmdConfirmarCom.TabIndex = 38;
-            this.cmdConfirmarCom.Text = "Confi";
-            this.cmdConfirmarCom.UseVisualStyleBackColor = true;
+            this.cmdConfirmarCom.Text = "Confirmar";
+            this.cmdConfirmarCom.UseVisualStyleBackColor = false;
+            this.cmdConfirmarCom.Click += new System.EventHandler(this.cmdConfirmarCom_Click);
             // 
             // cmdConfirmarLimpi
             // 
-            this.cmdConfirmarLimpi.Location = new System.Drawing.Point(756, 241);
+            this.cmdConfirmarLimpi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(153)))));
+            this.cmdConfirmarLimpi.FlatAppearance.BorderSize = 0;
+            this.cmdConfirmarLimpi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(153)))));
+            this.cmdConfirmarLimpi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cmdConfirmarLimpi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdConfirmarLimpi.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdConfirmarLimpi.ForeColor = System.Drawing.Color.White;
+            this.cmdConfirmarLimpi.Location = new System.Drawing.Point(724, 219);
             this.cmdConfirmarLimpi.Name = "cmdConfirmarLimpi";
-            this.cmdConfirmarLimpi.Size = new System.Drawing.Size(57, 31);
+            this.cmdConfirmarLimpi.Size = new System.Drawing.Size(104, 31);
             this.cmdConfirmarLimpi.TabIndex = 39;
-            this.cmdConfirmarLimpi.Text = "Confi";
-            this.cmdConfirmarLimpi.UseVisualStyleBackColor = true;
+            this.cmdConfirmarLimpi.Text = "Confirmar";
+            this.cmdConfirmarLimpi.UseVisualStyleBackColor = false;
+            this.cmdConfirmarLimpi.Click += new System.EventHandler(this.cmdConfirmarLimpi_Click);
+            // 
+            // txtSuma1
+            // 
+            this.txtSuma1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtSuma1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSuma1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
+            this.txtSuma1.ForeColor = System.Drawing.Color.Black;
+            this.txtSuma1.Location = new System.Drawing.Point(227, 196);
+            this.txtSuma1.Name = "txtSuma1";
+            this.txtSuma1.ReadOnly = true;
+            this.txtSuma1.Size = new System.Drawing.Size(56, 22);
+            this.txtSuma1.TabIndex = 41;
+            this.txtSuma1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTotal1
+            // 
+            this.txtTotal1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtTotal1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotal1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal1.ForeColor = System.Drawing.Color.Black;
+            this.txtTotal1.Location = new System.Drawing.Point(52, 196);
+            this.txtTotal1.Name = "txtTotal1";
+            this.txtTotal1.Size = new System.Drawing.Size(56, 22);
+            this.txtTotal1.TabIndex = 40;
+            this.txtTotal1.Text = "Total: ";
+            this.txtTotal1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtSuma2
             // 
@@ -676,11 +777,11 @@
             this.txtSuma2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSuma2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
             this.txtSuma2.ForeColor = System.Drawing.Color.Black;
-            this.txtSuma2.Location = new System.Drawing.Point(227, 218);
+            this.txtSuma2.Location = new System.Drawing.Point(549, 196);
             this.txtSuma2.Name = "txtSuma2";
             this.txtSuma2.ReadOnly = true;
             this.txtSuma2.Size = new System.Drawing.Size(56, 22);
-            this.txtSuma2.TabIndex = 41;
+            this.txtSuma2.TabIndex = 43;
             this.txtSuma2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTotal2
@@ -689,64 +790,38 @@
             this.txtTotal2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTotal2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal2.ForeColor = System.Drawing.Color.Black;
-            this.txtTotal2.Location = new System.Drawing.Point(52, 218);
+            this.txtTotal2.Location = new System.Drawing.Point(352, 196);
             this.txtTotal2.Name = "txtTotal2";
             this.txtTotal2.Size = new System.Drawing.Size(56, 22);
-            this.txtTotal2.TabIndex = 40;
+            this.txtTotal2.TabIndex = 42;
             this.txtTotal2.Text = "Total: ";
             this.txtTotal2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox9
+            // txtSuma3
             // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
-            this.textBox9.ForeColor = System.Drawing.Color.Black;
-            this.textBox9.Location = new System.Drawing.Point(549, 218);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(56, 22);
-            this.textBox9.TabIndex = 43;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSuma3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtSuma3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSuma3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
+            this.txtSuma3.ForeColor = System.Drawing.Color.Black;
+            this.txtSuma3.Location = new System.Drawing.Point(828, 196);
+            this.txtSuma3.Name = "txtSuma3";
+            this.txtSuma3.ReadOnly = true;
+            this.txtSuma3.Size = new System.Drawing.Size(56, 22);
+            this.txtSuma3.TabIndex = 45;
+            this.txtSuma3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox16
+            // txtTotal3
             // 
-            this.textBox16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox16.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.ForeColor = System.Drawing.Color.Black;
-            this.textBox16.Location = new System.Drawing.Point(352, 218);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(56, 22);
-            this.textBox16.TabIndex = 42;
-            this.textBox16.Text = "Total: ";
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox17
-            // 
-            this.textBox17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F);
-            this.textBox17.ForeColor = System.Drawing.Color.Black;
-            this.textBox17.Location = new System.Drawing.Point(828, 218);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(56, 22);
-            this.textBox17.TabIndex = 45;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox18
-            // 
-            this.textBox18.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.ForeColor = System.Drawing.Color.Black;
-            this.textBox18.Location = new System.Drawing.Point(675, 218);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(56, 22);
-            this.textBox18.TabIndex = 44;
-            this.textBox18.Text = "Total: ";
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTotal3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtTotal3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotal3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal3.ForeColor = System.Drawing.Color.Black;
+            this.txtTotal3.Location = new System.Drawing.Point(675, 196);
+            this.txtTotal3.Name = "txtTotal3";
+            this.txtTotal3.Size = new System.Drawing.Size(56, 22);
+            this.txtTotal3.TabIndex = 44;
+            this.txtTotal3.Text = "Total: ";
+            this.txtTotal3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // bunifuSeparator1
             // 
@@ -773,15 +848,16 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.cmdSimularEncuestas);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.bunifuSeparator1);
-            this.panel2.Controls.Add(this.textBox17);
-            this.panel2.Controls.Add(this.textBox18);
-            this.panel2.Controls.Add(this.textBox9);
-            this.panel2.Controls.Add(this.textBox16);
+            this.panel2.Controls.Add(this.txtSuma3);
+            this.panel2.Controls.Add(this.txtTotal3);
             this.panel2.Controls.Add(this.txtSuma2);
             this.panel2.Controls.Add(this.txtTotal2);
+            this.panel2.Controls.Add(this.txtSuma1);
+            this.panel2.Controls.Add(this.txtTotal1);
             this.panel2.Controls.Add(this.cmdConfirmarLimpi);
             this.panel2.Controls.Add(this.cmdConfirmarCom);
             this.panel2.Controls.Add(this.cmdConfirmarSer);
@@ -789,13 +865,13 @@
             this.panel2.Controls.Add(this.textBox11);
             this.panel2.Controls.Add(this.textBox12);
             this.panel2.Controls.Add(this.txtLimpiezaL);
-            this.panel2.Controls.Add(this.textBox14);
+            this.panel2.Controls.Add(this.txtLimpiezaA);
             this.panel2.Controls.Add(this.txtLimpiezaS);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.textBox7);
-            this.panel2.Controls.Add(this.textBox8);
+            this.panel2.Controls.Add(this.txtComidaM);
+            this.panel2.Controls.Add(this.txtComidaE);
             this.panel2.Controls.Add(this.txtComidaF);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.textBox4);
@@ -810,20 +886,282 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(5, 317);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 311);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(922, 330);
+            this.panel2.Size = new System.Drawing.Size(931, 330);
             this.panel2.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.IndianRed;
+            this.button1.Location = new System.Drawing.Point(179, 275);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(278, 31);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "Mostrar Intervalos";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // cmdSimularEncuestas
             // 
-            this.cmdSimularEncuestas.Location = new System.Drawing.Point(267, 296);
+            this.cmdSimularEncuestas.BackColor = System.Drawing.Color.White;
+            this.cmdSimularEncuestas.FlatAppearance.BorderSize = 0;
+            this.cmdSimularEncuestas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cmdSimularEncuestas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
+            this.cmdSimularEncuestas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdSimularEncuestas.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdSimularEncuestas.ForeColor = System.Drawing.Color.IndianRed;
+            this.cmdSimularEncuestas.Location = new System.Drawing.Point(536, 275);
             this.cmdSimularEncuestas.Name = "cmdSimularEncuestas";
-            this.cmdSimularEncuestas.Size = new System.Drawing.Size(374, 31);
+            this.cmdSimularEncuestas.Size = new System.Drawing.Size(278, 31);
             this.cmdSimularEncuestas.TabIndex = 38;
             this.cmdSimularEncuestas.Text = "Simular Encuestas";
-            this.cmdSimularEncuestas.UseVisualStyleBackColor = true;
+            this.cmdSimularEncuestas.UseVisualStyleBackColor = false;
             this.cmdSimularEncuestas.Click += new System.EventHandler(this.cmdSimularEncuestas_Click);
+            // 
+            // error
+            // 
+            this.error.ContainerControl = this;
+            this.error.Icon = ((System.Drawing.Icon)(resources.GetObject("error.Icon")));
+            // 
+            // rdConfirmar1
+            // 
+            this.rdConfirmar1.ElipseRadius = 21;
+            this.rdConfirmar1.TargetControl = this.cmdConfirmarSer;
+            // 
+            // rdConfirmar2
+            // 
+            this.rdConfirmar2.ElipseRadius = 21;
+            this.rdConfirmar2.TargetControl = this.cmdConfirmarCom;
+            // 
+            // rdConfirmar3
+            // 
+            this.rdConfirmar3.ElipseRadius = 21;
+            this.rdConfirmar3.TargetControl = this.cmdConfirmarLimpi;
+            // 
+            // rdSimular
+            // 
+            this.rdSimular.ElipseRadius = 21;
+            this.rdSimular.TargetControl = this.cmdSimularEncuestas;
+            // 
+            // pnResultados
+            // 
+            this.pnResultados.Controls.Add(this.pnConclusionG);
+            this.pnResultados.Controls.Add(this.separador);
+            this.pnResultados.Controls.Add(this.lblComida);
+            this.pnResultados.Controls.Add(this.lblLimpieza);
+            this.pnResultados.Controls.Add(this.lblMeseros);
+            this.pnResultados.Controls.Add(this.dgvResultados);
+            this.pnResultados.Location = new System.Drawing.Point(36, 674);
+            this.pnResultados.Name = "pnResultados";
+            this.pnResultados.Size = new System.Drawing.Size(867, 1221);
+            this.pnResultados.TabIndex = 44;
+            // 
+            // pnConclusionG
+            // 
+            this.pnConclusionG.BackColor = System.Drawing.Color.LightPink;
+            this.pnConclusionG.Controls.Add(this.txtConclusionGeneral);
+            this.pnConclusionG.Location = new System.Drawing.Point(76, 111);
+            this.pnConclusionG.Name = "pnConclusionG";
+            this.pnConclusionG.Size = new System.Drawing.Size(716, 63);
+            this.pnConclusionG.TabIndex = 13;
+            // 
+            // txtConclusionGeneral
+            // 
+            this.txtConclusionGeneral.BackColor = System.Drawing.Color.LightPink;
+            this.txtConclusionGeneral.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConclusionGeneral.Font = new System.Drawing.Font("Candara Light", 14F, System.Drawing.FontStyle.Bold);
+            this.txtConclusionGeneral.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtConclusionGeneral.Location = new System.Drawing.Point(16, 6);
+            this.txtConclusionGeneral.Multiline = true;
+            this.txtConclusionGeneral.Name = "txtConclusionGeneral";
+            this.txtConclusionGeneral.ReadOnly = true;
+            this.txtConclusionGeneral.Size = new System.Drawing.Size(686, 52);
+            this.txtConclusionGeneral.TabIndex = 0;
+            this.txtConclusionGeneral.Text = "aaa";
+            this.txtConclusionGeneral.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // separador
+            // 
+            this.separador.BackColor = System.Drawing.Color.Transparent;
+            this.separador.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(226)))), ((int)(((byte)(190)))), ((int)(((byte)(234)))));
+            this.separador.LineThickness = 1;
+            this.separador.Location = new System.Drawing.Point(63, 175);
+            this.separador.Name = "separador";
+            this.separador.Size = new System.Drawing.Size(750, 35);
+            this.separador.TabIndex = 14;
+            this.separador.Transparency = 200;
+            this.separador.Vertical = false;
+            // 
+            // lblComida
+            // 
+            this.lblComida.AutoSize = true;
+            this.lblComida.Font = new System.Drawing.Font("Candara Light", 13F);
+            this.lblComida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblComida.Location = new System.Drawing.Point(36, 42);
+            this.lblComida.Name = "lblComida";
+            this.lblComida.Size = new System.Drawing.Size(796, 22);
+            this.lblComida.TabIndex = 11;
+            this.lblComida.Text = "En el Sector A el ganado: El dia 1 se encontraba enfermo, el dia 14  saludable y " +
+    "30 dias despues saludable";
+            this.lblComida.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblLimpieza
+            // 
+            this.lblLimpieza.AutoSize = true;
+            this.lblLimpieza.Font = new System.Drawing.Font("Candara Light", 13F);
+            this.lblLimpieza.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblLimpieza.Location = new System.Drawing.Point(36, 73);
+            this.lblLimpieza.Name = "lblLimpieza";
+            this.lblLimpieza.Size = new System.Drawing.Size(796, 22);
+            this.lblLimpieza.TabIndex = 12;
+            this.lblLimpieza.Text = "En el Sector A el ganado: El dia 1 se encontraba enfermo, el dia 14  saludable y " +
+    "30 dias despues saludable";
+            this.lblLimpieza.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblMeseros
+            // 
+            this.lblMeseros.AutoSize = true;
+            this.lblMeseros.Font = new System.Drawing.Font("Candara Light", 13F);
+            this.lblMeseros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblMeseros.Location = new System.Drawing.Point(36, 11);
+            this.lblMeseros.Name = "lblMeseros";
+            this.lblMeseros.Size = new System.Drawing.Size(796, 22);
+            this.lblMeseros.TabIndex = 10;
+            this.lblMeseros.Text = "En el Sector A el ganado: El dia 1 se encontraba enfermo, el dia 14  saludable y " +
+    "30 dias despues saludable";
+            this.lblMeseros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // dgvResultados
+            // 
+            this.dgvResultados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvResultados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvResultados.BackgroundColor = System.Drawing.Color.White;
+            this.dgvResultados.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvResultados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PaleVioletRed;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResultados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dia,
+            this.a,
+            this.Column10,
+            this.Column2,
+            this.Column3,
+            this.Column1});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResultados.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvResultados.EnableHeadersVisualStyles = false;
+            this.dgvResultados.GridColor = System.Drawing.Color.MediumVioletRed;
+            this.dgvResultados.Location = new System.Drawing.Point(25, 212);
+            this.dgvResultados.Name = "dgvResultados";
+            this.dgvResultados.ReadOnly = true;
+            this.dgvResultados.RowHeadersVisible = false;
+            this.dgvResultados.RowHeadersWidth = 100;
+            this.dgvResultados.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvResultados.Size = new System.Drawing.Size(818, 992);
+            this.dgvResultados.TabIndex = 6;
+            // 
+            // Dia
+            // 
+            this.Dia.HeaderText = "Dia";
+            this.Dia.Name = "Dia";
+            this.Dia.ReadOnly = true;
+            this.Dia.Width = 59;
+            // 
+            // a
+            // 
+            this.a.HeaderText = "No. cliente";
+            this.a.Name = "a";
+            this.a.ReadOnly = true;
+            this.a.Width = 113;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Cal. Meseros";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 127;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Cal. Comida";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 117;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Cal. Limpieza";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 130;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Conclusión";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 109;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.lblTitleExperimento);
+            this.panel8.Controls.Add(this.pnexperimento);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 641);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(931, 38);
+            this.panel8.TabIndex = 93;
+            // 
+            // lblTitleExperimento
+            // 
+            this.lblTitleExperimento.AutoSize = true;
+            this.lblTitleExperimento.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleExperimento.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.lblTitleExperimento.Location = new System.Drawing.Point(355, 3);
+            this.lblTitleExperimento.Name = "lblTitleExperimento";
+            this.lblTitleExperimento.Size = new System.Drawing.Size(255, 26);
+            this.lblTitleExperimento.TabIndex = 41;
+            this.lblTitleExperimento.Text = "Resultados de las encuestas";
+            // 
+            // pnexperimento
+            // 
+            this.pnexperimento.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.pnexperimento.Location = new System.Drawing.Point(27, 15);
+            this.pnexperimento.Name = "pnexperimento";
+            this.pnexperimento.Size = new System.Drawing.Size(885, 5);
+            this.pnexperimento.TabIndex = 42;
+            // 
+            // rdConclusionG
+            // 
+            this.rdConclusionG.ElipseRadius = 20;
+            this.rdConclusionG.TargetControl = this.pnConclusionG;
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(319, 1902);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(249, 26);
+            this.panel5.TabIndex = 94;
             // 
             // frmProblema
             // 
@@ -831,9 +1169,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(949, 450);
+            this.ClientSize = new System.Drawing.Size(948, 700);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.pnResultados);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pnProblema);
             this.Controls.Add(this.panel1);
@@ -844,7 +1184,7 @@
             this.Load += new System.EventHandler(this.frmProblema_Load);
             this.pnEncabezado.ResumeLayout(false);
             this.pnEncabezado.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -853,8 +1193,15 @@
             this.pnProblema.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
+            this.pnResultados.ResumeLayout(false);
+            this.pnResultados.PerformLayout();
+            this.pnConclusionG.ResumeLayout(false);
+            this.pnConclusionG.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -862,7 +1209,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnEncabezado;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox cmdCerrar;
         private System.Windows.Forms.Label label1;
         private ns1.BunifuElipse rdForma;
         private System.Windows.Forms.Panel panel1;
@@ -882,15 +1229,14 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox textBox17;
-        public System.Windows.Forms.TextBox textBox18;
-        public System.Windows.Forms.TextBox textBox9;
-        public System.Windows.Forms.TextBox textBox16;
+        public System.Windows.Forms.TextBox txtSuma3;
+        public System.Windows.Forms.TextBox txtTotal3;
         public System.Windows.Forms.TextBox txtSuma2;
         public System.Windows.Forms.TextBox txtTotal2;
+        public System.Windows.Forms.TextBox txtSuma1;
+        public System.Windows.Forms.TextBox txtTotal1;
         private System.Windows.Forms.Button cmdConfirmarLimpi;
         private System.Windows.Forms.Button cmdConfirmarCom;
         private System.Windows.Forms.Button cmdConfirmarSer;
@@ -898,13 +1244,13 @@
         public System.Windows.Forms.TextBox textBox11;
         public System.Windows.Forms.TextBox textBox12;
         public System.Windows.Forms.TextBox txtLimpiezaL;
-        public System.Windows.Forms.TextBox textBox14;
+        public System.Windows.Forms.TextBox txtLimpiezaA;
         public System.Windows.Forms.TextBox txtLimpiezaS;
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.TextBox textBox2;
         public System.Windows.Forms.TextBox textBox6;
-        public System.Windows.Forms.TextBox textBox7;
-        public System.Windows.Forms.TextBox textBox8;
+        public System.Windows.Forms.TextBox txtComidaM;
+        public System.Windows.Forms.TextBox txtComidaE;
         public System.Windows.Forms.TextBox txtComidaF;
         public System.Windows.Forms.TextBox textBox3;
         public System.Windows.Forms.TextBox textBox4;
@@ -918,6 +1264,31 @@
         private ns1.BunifuSeparator bunifuSeparator2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button cmdSimularEncuestas;
+        private System.Windows.Forms.ErrorProvider error;
+        private ns1.BunifuElipse rdConfirmar1;
+        private ns1.BunifuElipse rdConfirmar2;
+        private ns1.BunifuElipse rdConfirmar3;
+        private System.Windows.Forms.Panel pnResultados;
+        public System.Windows.Forms.DataGridView dgvResultados;
+        private ns1.BunifuElipse rdSimular;
+        public System.Windows.Forms.Panel panel8;
+        public ns1.BunifuCustomLabel lblTitleExperimento;
+        public System.Windows.Forms.Panel pnexperimento;
+        private System.Windows.Forms.Panel pnConclusionG;
+        private System.Windows.Forms.TextBox txtConclusionGeneral;
+        private ns1.BunifuSeparator separador;
+        public System.Windows.Forms.Label lblComida;
+        public System.Windows.Forms.Label lblLimpieza;
+        public System.Windows.Forms.Label lblMeseros;
+        private ns1.BunifuElipse rdConclusionG;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Dia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn a;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.Panel panel5;
     }
 }
 

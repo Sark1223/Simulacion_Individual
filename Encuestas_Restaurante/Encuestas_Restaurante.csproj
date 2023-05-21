@@ -76,6 +76,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Semilla.cs" />
+    <Compile Include="ValidacionDeValores.cs" />
     <EmbeddedResource Include="frmHistorial.resx">
       <DependentUpon>frmHistorial.cs</DependentUpon>
     </EmbeddedResource>

@@ -161,8 +161,9 @@
             this.panTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panTop.Location = new System.Drawing.Point(0, 0);
             this.panTop.Name = "panTop";
-            this.panTop.Size = new System.Drawing.Size(877, 32);
+            this.panTop.Size = new System.Drawing.Size(877, 39);
             this.panTop.TabIndex = 31;
+            this.panTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mover);
             // 
             // lblTitulo
             // 

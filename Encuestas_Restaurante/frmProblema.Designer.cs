@@ -44,12 +44,12 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.rdEncabezado = new ns1.BunifuElipse(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnDatos = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuSeparator2 = new ns1.BunifuSeparator();
             this.pnProblema = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.rdDatos = new ns1.BunifuElipse(this.components);
             this.label3 = new System.Windows.Forms.Label();
@@ -118,9 +118,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnDatos.SuspendLayout();
             this.pnProblema.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.pnResultados.SuspendLayout();
@@ -274,7 +274,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(145)))), ((int)(((byte)(153)))));
-            this.panel3.Location = new System.Drawing.Point(921, 0);
+            this.panel3.Location = new System.Drawing.Point(918, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(20, 53);
             this.panel3.TabIndex = 9;
@@ -294,16 +294,6 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Instrucciones: Ingrese las probabilidades deseadas y presione click en \"Confirmar" +
     "\", al finalizar presione el boton \r\n\"Simular Encuestas\"";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Encuestas_Restaurante.Properties.Resources.experiencia_del_cliente;
-            this.pictureBox3.Location = new System.Drawing.Point(660, 8);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(249, 197);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
             // 
             // pnDatos
             // 
@@ -359,6 +349,16 @@
             this.pnProblema.Size = new System.Drawing.Size(931, 215);
             this.pnProblema.TabIndex = 10;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Encuestas_Restaurante.Properties.Resources.experiencia_del_cliente;
+            this.pictureBox3.Location = new System.Drawing.Point(660, 8);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(249, 197);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(190)))), ((int)(((byte)(234)))));
@@ -409,9 +409,9 @@
             this.label8.Font = new System.Drawing.Font("Candara Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(348, 126);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(188, 69);
+            this.label8.Size = new System.Drawing.Size(197, 69);
             this.label8.TabIndex = 15;
-            this.label8.Text = "Fría\r\nMal servida\r\nExelente presentacion";
+            this.label8.Text = "Fría\r\nMal servida\r\nExcelente presentacion";
             // 
             // label9
             // 
@@ -896,11 +896,11 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightPink;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.YellowGreen;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.IndianRed;
+            this.button1.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.button1.Location = new System.Drawing.Point(179, 275);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(278, 31);
@@ -1006,10 +1006,10 @@
             this.lblComida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblComida.Location = new System.Drawing.Point(36, 42);
             this.lblComida.Name = "lblComida";
-            this.lblComida.Size = new System.Drawing.Size(796, 22);
+            this.lblComida.Size = new System.Drawing.Size(748, 22);
             this.lblComida.TabIndex = 11;
-            this.lblComida.Text = "En el Sector A el ganado: El dia 1 se encontraba enfermo, el dia 14  saludable y " +
-    "30 dias despues saludable";
+            this.lblComida.Text = "La calidad del estado en el que se encontraba la comida fue mayormente: Excelente" +
+    " presentación.";
             this.lblComida.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblLimpieza
@@ -1019,10 +1019,10 @@
             this.lblLimpieza.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblLimpieza.Location = new System.Drawing.Point(36, 73);
             this.lblLimpieza.Name = "lblLimpieza";
-            this.lblLimpieza.Size = new System.Drawing.Size(796, 22);
+            this.lblLimpieza.Size = new System.Drawing.Size(750, 22);
             this.lblLimpieza.TabIndex = 12;
-            this.lblLimpieza.Text = "En el Sector A el ganado: El dia 1 se encontraba enfermo, el dia 14  saludable y " +
-    "30 dias despues saludable";
+            this.lblLimpieza.Text = "Segun los clientes encuestados, la limpieza del restaurante se encontraba mayorme" +
+    "nte: Aceptable";
             this.lblLimpieza.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblMeseros
@@ -1032,10 +1032,10 @@
             this.lblMeseros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblMeseros.Location = new System.Drawing.Point(36, 11);
             this.lblMeseros.Name = "lblMeseros";
-            this.lblMeseros.Size = new System.Drawing.Size(796, 22);
+            this.lblMeseros.Size = new System.Drawing.Size(626, 22);
             this.lblMeseros.TabIndex = 10;
-            this.lblMeseros.Text = "En el Sector A el ganado: El dia 1 se encontraba enfermo, el dia 14  saludable y " +
-    "30 dias despues saludable";
+            this.lblMeseros.Text = "El servicio de los meseros fue calificado por los clientes mayormente como: Bueno" +
+    "";
             this.lblMeseros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // dgvResultados
@@ -1187,10 +1187,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.pnDatos.ResumeLayout(false);
             this.pnDatos.PerformLayout();
             this.pnProblema.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();

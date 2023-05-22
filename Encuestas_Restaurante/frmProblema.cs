@@ -239,6 +239,12 @@ namespace Encuestas_Restaurante
                     int renglon;
                     //Limpiar Tabla
                     dgvResultados.Rows.Clear();
+
+                    //Arreglos para guardar resultados
+                    string[] DiaMesero= new string[7];
+                    string[] DiaComida= new string[7];
+                    string[] DiaLimpieza= new string[7];
+
                     do
                     {
                         //Agregra nuevo Renglon
@@ -278,10 +284,14 @@ namespace Encuestas_Restaurante
                         dgvResultados.Rows[renglon].Cells[3].Value = comida;
                         dgvResultados.Rows[renglon].Cells[4].Value = limpieza;
 
+                        DiaMesero[dias] = RecorrerMeseros(mes);
+                        DiaComida[dias] = RecorrerComida(com);
+                        DiaLimpieza[dias] = RecorrerLimpieza(lim);
+
                         string w  = "Las respuestas más obtenidas hacia:" +
-                            $"\r\n - Meseros:{RecorrerMeseros(mes)}" +
-                            $"\r\n - Comida:{RecorrerComida(com)}" +
-                            $"\r\n - Limpieza:{RecorrerLimpieza(lim)}";
+                            $"\r\n - Meseros:{DiaMesero[dias]}" +
+                            $"\r\n - Comida:{DiaComida[dias]}" +
+                            $"\r\n - Limpieza:{DiaLimpieza[dias]}";
 
                         dgvResultados.Rows[renglon].Cells[5].Value = w;
 
@@ -289,6 +299,35 @@ namespace Encuestas_Restaurante
                         dias++;
 
                     } while (dias < 7);
+
+                    string resMeseros = RecorrerMeseros(DiaMesero);
+                    string resComida = RecorrerComida(DiaComida);
+                    string resLimpieza = RecorrerLimpieza(DiaLimpieza);
+
+                    lblMeseros.Text = "El servicio de los meseros fue calificado por los clientes mayormente como: " + resMeseros;
+                    lblComida.Text = "La calidad del estado en el que se encontraba la comida fue mayormente: " + resComida;
+                    lblLimpieza.Text = "Segun los clientes encuestados, la limpieza del restaurante se encontraba mayormente: " + resLimpieza;
+
+                    if (resMeseros == "Excelente" && resComida == "Excelente presentación" && resLimpieza == "Limpio")
+                    {
+
+                    }
+                    else if (resMeseros == "Excelente" && resComida == "Excelente presentación" && resLimpieza == "Aceptable")
+                    {
+
+                    }
+                    else if (resMeseros == "Excelente" && resComida == "Mal servida" && resLimpieza == "Aceptable")
+                    {
+
+                    }
+                    else if(resMeseros == "Buena" && resComida == "Mal servida" && resLimpieza == "Aceptable")
+                    {
+
+                    }
+                    else if(resMeseros == "Mala" && resComida == "Fria" && resLimpieza == "Sucio")
+                    {
+
+                    }
                 }
                 else
                 {

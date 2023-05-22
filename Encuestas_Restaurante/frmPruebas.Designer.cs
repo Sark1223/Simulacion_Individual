@@ -36,7 +36,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCerrar = new ns1.BunifuImageButton();
             this.label17 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -67,11 +66,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.lblResFrecuencia = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
@@ -108,9 +106,7 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.lblSigFrecuencia = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -122,20 +118,93 @@
             this.label32 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.rdForma = new ns1.BunifuElipse(this.components);
             this.rdCasos = new ns1.BunifuElipse(this.components);
+            this.label47 = new System.Windows.Forms.Label();
+            this.lblSigPok = new System.Windows.Forms.Label();
+            this.lblResultFe = new System.Windows.Forms.Label();
+            this.lblresultPe = new System.Windows.Forms.Label();
+            this.lblResultFo = new System.Windows.Forms.Label();
+            this.lblResPoker = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.lblResultXi = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.panel39 = new System.Windows.Forms.Panel();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.txtXi7 = new System.Windows.Forms.TextBox();
+            this.txtTDIfe = new System.Windows.Forms.TextBox();
+            this.txtTDIpe = new System.Windows.Forms.TextBox();
+            this.txtTDIfo = new System.Windows.Forms.TextBox();
+            this.txtXi6 = new System.Windows.Forms.TextBox();
+            this.txtCIfe = new System.Windows.Forms.TextBox();
+            this.txtCIpe = new System.Windows.Forms.TextBox();
+            this.txtCIfo = new System.Windows.Forms.TextBox();
+            this.txtXi5 = new System.Windows.Forms.TextBox();
+            this.txtTIPfe = new System.Windows.Forms.TextBox();
+            this.txtTIPpe = new System.Windows.Forms.TextBox();
+            this.txtTIPfo = new System.Windows.Forms.TextBox();
+            this.txtXi4 = new System.Windows.Forms.TextBox();
+            this.txtTIfe = new System.Windows.Forms.TextBox();
+            this.txtTIpe = new System.Windows.Forms.TextBox();
+            this.txtTIfo = new System.Windows.Forms.TextBox();
+            this.txtXi3 = new System.Windows.Forms.TextBox();
+            this.txtDPfe = new System.Windows.Forms.TextBox();
+            this.txtDPpe = new System.Windows.Forms.TextBox();
+            this.txtDPfo = new System.Windows.Forms.TextBox();
+            this.txtXi2 = new System.Windows.Forms.TextBox();
+            this.txtUPfe = new System.Windows.Forms.TextBox();
+            this.txtUPpe = new System.Windows.Forms.TextBox();
+            this.txtUPfo = new System.Windows.Forms.TextBox();
+            this.txtXi1 = new System.Windows.Forms.TextBox();
+            this.txtTDfe = new System.Windows.Forms.TextBox();
+            this.txtTDpe = new System.Windows.Forms.TextBox();
+            this.txtTDfo = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.panel36 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new ns1.BunifuImageButton();
+            this.panel37 = new System.Windows.Forms.Panel();
             this.panel11.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnCasos.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel41.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel11
@@ -143,7 +212,7 @@
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(120)))), ((int)(((byte)(172)))));
             this.panel11.Controls.Add(this.label19);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel11.Location = new System.Drawing.Point(2, 889);
+            this.panel11.Location = new System.Drawing.Point(2, 970);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(662, 27);
             this.panel11.TabIndex = 32;
@@ -165,7 +234,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel8.Location = new System.Drawing.Point(664, 102);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(4, 814);
+            this.panel8.Size = new System.Drawing.Size(4, 895);
             this.panel8.TabIndex = 31;
             // 
             // panel7
@@ -174,7 +243,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(0, 102);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(2, 814);
+            this.panel7.Size = new System.Drawing.Size(2, 895);
             this.panel7.TabIndex = 30;
             // 
             // panel12
@@ -199,20 +268,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(668, 102);
             this.panel1.TabIndex = 29;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.ImageActive = null;
-            this.btnCerrar.Location = new System.Drawing.Point(623, 8);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(27, 24);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 29;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Zoom = 10;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // label17
             // 
@@ -532,15 +587,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Prueba de promedios";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(12, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 41);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -550,15 +596,6 @@
             this.label1.Size = new System.Drawing.Size(35, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "X̅ =";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(576, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label6
             // 
@@ -610,6 +647,15 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(662, 283);
             this.panel13.TabIndex = 34;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(165)))));
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.Location = new System.Drawing.Point(0, 282);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(662, 1);
+            this.panel9.TabIndex = 100;
             // 
             // label15
             // 
@@ -1006,15 +1052,6 @@
             this.lblSigFrecuencia.Text = "Significancia\r\nZa = 1.645";
             this.lblSigFrecuencia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(578, 6);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 70;
-            this.pictureBox4.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -1024,15 +1061,6 @@
             this.label3.Size = new System.Drawing.Size(178, 19);
             this.label3.TabIndex = 69;
             this.label3.Text = "Prueba de frecuencia";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(11, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(37, 43);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 68;
-            this.pictureBox3.TabStop = false;
             // 
             // label27
             // 
@@ -1135,27 +1163,54 @@
             // 
             // panel25
             // 
-            this.panel25.Location = new System.Drawing.Point(451, 852);
+            this.panel25.Location = new System.Drawing.Point(496, 957);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(24, 37);
+            this.panel25.Size = new System.Drawing.Size(24, 13);
             this.panel25.TabIndex = 35;
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.label47);
+            this.panel6.Controls.Add(this.lblSigPok);
+            this.panel6.Controls.Add(this.lblResultFe);
+            this.panel6.Controls.Add(this.lblresultPe);
+            this.panel6.Controls.Add(this.lblResultFo);
+            this.panel6.Controls.Add(this.lblResPoker);
+            this.panel6.Controls.Add(this.label48);
+            this.panel6.Controls.Add(this.lblResultXi);
+            this.panel6.Controls.Add(this.label40);
+            this.panel6.Controls.Add(this.label39);
+            this.panel6.Controls.Add(this.label38);
+            this.panel6.Controls.Add(this.label37);
+            this.panel6.Controls.Add(this.pictureBox6);
+            this.panel6.Controls.Add(this.label36);
+            this.panel6.Controls.Add(this.label24);
+            this.panel6.Controls.Add(this.label23);
+            this.panel6.Controls.Add(this.label22);
+            this.panel6.Controls.Add(this.label21);
+            this.panel6.Controls.Add(this.label20);
+            this.panel6.Controls.Add(this.label18);
+            this.panel6.Controls.Add(this.panel40);
+            this.panel6.Controls.Add(this.panel39);
+            this.panel6.Controls.Add(this.panel32);
+            this.panel6.Controls.Add(this.panel31);
+            this.panel6.Controls.Add(this.panel30);
+            this.panel6.Controls.Add(this.panel29);
+            this.panel6.Controls.Add(this.panel28);
+            this.panel6.Controls.Add(this.panel26);
+            this.panel6.Controls.Add(this.panel27);
+            this.panel6.Controls.Add(this.panel33);
+            this.panel6.Controls.Add(this.panel34);
+            this.panel6.Controls.Add(this.panel35);
+            this.panel6.Controls.Add(this.pictureBox5);
+            this.panel6.Controls.Add(this.panel41);
+            this.panel6.Controls.Add(this.label49);
+            this.panel6.Controls.Add(this.panel36);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(2, 578);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(662, 268);
+            this.panel6.Size = new System.Drawing.Size(662, 373);
             this.panel6.TabIndex = 36;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(104)))), ((int)(((byte)(165)))));
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 282);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(662, 1);
-            this.panel9.TabIndex = 100;
             // 
             // rdForma
             // 
@@ -1166,6 +1221,902 @@
             // 
             this.rdCasos.ElipseRadius = 35;
             this.rdCasos.TargetControl = this.pnCasos;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Black;
+            this.label47.Location = new System.Drawing.Point(555, 93);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(38, 16);
+            this.label47.TabIndex = 143;
+            this.label47.Text = "Zo =";
+            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblSigPok
+            // 
+            this.lblSigPok.AutoSize = true;
+            this.lblSigPok.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSigPok.ForeColor = System.Drawing.Color.Black;
+            this.lblSigPok.Location = new System.Drawing.Point(592, 93);
+            this.lblSigPok.Name = "lblSigPok";
+            this.lblSigPok.Size = new System.Drawing.Size(44, 16);
+            this.lblSigPok.TabIndex = 142;
+            this.lblSigPok.Text = "1.645";
+            this.lblSigPok.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblResultFe
+            // 
+            this.lblResultFe.AutoSize = true;
+            this.lblResultFe.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultFe.ForeColor = System.Drawing.Color.Black;
+            this.lblResultFe.Location = new System.Drawing.Point(362, 317);
+            this.lblResultFe.Name = "lblResultFe";
+            this.lblResultFe.Size = new System.Drawing.Size(68, 16);
+            this.lblResultFe.TabIndex = 141;
+            this.lblResultFe.Text = "resultado";
+            this.lblResultFe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblresultPe
+            // 
+            this.lblresultPe.AutoSize = true;
+            this.lblresultPe.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblresultPe.ForeColor = System.Drawing.Color.Black;
+            this.lblresultPe.Location = new System.Drawing.Point(280, 317);
+            this.lblresultPe.Name = "lblresultPe";
+            this.lblresultPe.Size = new System.Drawing.Size(68, 16);
+            this.lblresultPe.TabIndex = 140;
+            this.lblresultPe.Text = "resultado";
+            this.lblresultPe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblResultFo
+            // 
+            this.lblResultFo.AutoSize = true;
+            this.lblResultFo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultFo.ForeColor = System.Drawing.Color.Black;
+            this.lblResultFo.Location = new System.Drawing.Point(206, 317);
+            this.lblResultFo.Name = "lblResultFo";
+            this.lblResultFo.Size = new System.Drawing.Size(68, 16);
+            this.lblResultFo.TabIndex = 139;
+            this.lblResultFo.Text = "resultado";
+            this.lblResultFo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblResPoker
+            // 
+            this.lblResPoker.AutoSize = true;
+            this.lblResPoker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lblResPoker.ForeColor = System.Drawing.Color.Black;
+            this.lblResPoker.Location = new System.Drawing.Point(237, 349);
+            this.lblResPoker.Name = "lblResPoker";
+            this.lblResPoker.Size = new System.Drawing.Size(233, 20);
+            this.lblResPoker.TabIndex = 138;
+            this.lblResPoker.Text = "La prueba a sido acreditada";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label48.ForeColor = System.Drawing.Color.Black;
+            this.label48.Location = new System.Drawing.Point(516, 313);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(41, 20);
+            this.label48.TabIndex = 137;
+            this.label48.Text = "= Zo";
+            // 
+            // lblResultXi
+            // 
+            this.lblResultXi.AutoSize = true;
+            this.lblResultXi.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultXi.ForeColor = System.Drawing.Color.Black;
+            this.lblResultXi.Location = new System.Drawing.Point(442, 317);
+            this.lblResultXi.Name = "lblResultXi";
+            this.lblResultXi.Size = new System.Drawing.Size(68, 16);
+            this.lblResultXi.TabIndex = 136;
+            this.lblResultXi.Text = "resultado";
+            this.lblResultXi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.Black;
+            this.label40.Location = new System.Drawing.Point(385, 58);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(23, 16);
+            this.label40.TabIndex = 135;
+            this.label40.Text = "FE";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.Black;
+            this.label39.Location = new System.Drawing.Point(277, 58);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(80, 16);
+            this.label39.TabIndex = 134;
+            this.label39.Text = "P(EVENTO)";
+            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.Black;
+            this.label38.Location = new System.Drawing.Point(229, 58);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(25, 16);
+            this.label38.TabIndex = 133;
+            this.label38.Text = "FO";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.Black;
+            this.label37.Location = new System.Drawing.Point(560, 74);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(89, 16);
+            this.label37.TabIndex = 132;
+            this.label37.Text = "Significancia\r\n";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.Black;
+            this.label36.Location = new System.Drawing.Point(16, 286);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(115, 16);
+            this.label36.TabIndex = 130;
+            this.label36.Text = "TODOS IGUALES";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(17, 256);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(121, 16);
+            this.label24.TabIndex = 129;
+            this.label24.Text = "CUATRO IGUALES";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(16, 228);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(169, 16);
+            this.label23.TabIndex = 128;
+            this.label23.Text = "TRES IGUALES Y UN PAR";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(16, 193);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(102, 16);
+            this.label22.TabIndex = 127;
+            this.label22.Text = "TRES IGUALES";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(15, 163);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(82, 16);
+            this.label21.TabIndex = 126;
+            this.label21.Text = "DOS PARES";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(15, 130);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(55, 16);
+            this.label20.TabIndex = 125;
+            this.label20.Text = "UN PAR";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(14, 96);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(140, 16);
+            this.label18.TabIndex = 124;
+            this.label18.Text = "TODOS DIFERENTES";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panel40
+            // 
+            this.panel40.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel40.ForeColor = System.Drawing.Color.Black;
+            this.panel40.Location = new System.Drawing.Point(436, 87);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(2, 218);
+            this.panel40.TabIndex = 122;
+            // 
+            // panel39
+            // 
+            this.panel39.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel39.ForeColor = System.Drawing.Color.Black;
+            this.panel39.Location = new System.Drawing.Point(357, 87);
+            this.panel39.Name = "panel39";
+            this.panel39.Size = new System.Drawing.Size(2, 218);
+            this.panel39.TabIndex = 121;
+            // 
+            // panel32
+            // 
+            this.panel32.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel32.ForeColor = System.Drawing.Color.Black;
+            this.panel32.Location = new System.Drawing.Point(275, 88);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(2, 218);
+            this.panel32.TabIndex = 120;
+            // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel31.ForeColor = System.Drawing.Color.Black;
+            this.panel31.Location = new System.Drawing.Point(509, 88);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(2, 218);
+            this.panel31.TabIndex = 119;
+            // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel30.ForeColor = System.Drawing.Color.Black;
+            this.panel30.Location = new System.Drawing.Point(209, 88);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(2, 218);
+            this.panel30.TabIndex = 118;
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel29.ForeColor = System.Drawing.Color.Black;
+            this.panel29.Location = new System.Drawing.Point(210, 305);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(300, 2);
+            this.panel29.TabIndex = 117;
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel28.ForeColor = System.Drawing.Color.Black;
+            this.panel28.Location = new System.Drawing.Point(210, 274);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(300, 2);
+            this.panel28.TabIndex = 116;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel26.ForeColor = System.Drawing.Color.Black;
+            this.panel26.Location = new System.Drawing.Point(210, 245);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(300, 2);
+            this.panel26.TabIndex = 115;
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel27.ForeColor = System.Drawing.Color.Black;
+            this.panel27.Location = new System.Drawing.Point(210, 212);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(300, 2);
+            this.panel27.TabIndex = 114;
+            // 
+            // panel33
+            // 
+            this.panel33.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel33.ForeColor = System.Drawing.Color.Black;
+            this.panel33.Location = new System.Drawing.Point(210, 183);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(300, 2);
+            this.panel33.TabIndex = 113;
+            // 
+            // panel34
+            // 
+            this.panel34.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel34.ForeColor = System.Drawing.Color.Black;
+            this.panel34.Location = new System.Drawing.Point(210, 150);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(300, 2);
+            this.panel34.TabIndex = 112;
+            // 
+            // panel35
+            // 
+            this.panel35.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel35.ForeColor = System.Drawing.Color.Black;
+            this.panel35.Location = new System.Drawing.Point(210, 117);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(300, 2);
+            this.panel35.TabIndex = 111;
+            // 
+            // panel41
+            // 
+            this.panel41.BackColor = System.Drawing.Color.GhostWhite;
+            this.panel41.Controls.Add(this.panel37);
+            this.panel41.Controls.Add(this.txtXi7);
+            this.panel41.Controls.Add(this.txtTDIfe);
+            this.panel41.Controls.Add(this.txtTDIpe);
+            this.panel41.Controls.Add(this.txtTDIfo);
+            this.panel41.Controls.Add(this.txtXi6);
+            this.panel41.Controls.Add(this.txtCIfe);
+            this.panel41.Controls.Add(this.txtCIpe);
+            this.panel41.Controls.Add(this.txtCIfo);
+            this.panel41.Controls.Add(this.txtXi5);
+            this.panel41.Controls.Add(this.txtTIPfe);
+            this.panel41.Controls.Add(this.txtTIPpe);
+            this.panel41.Controls.Add(this.txtTIPfo);
+            this.panel41.Controls.Add(this.txtXi4);
+            this.panel41.Controls.Add(this.txtTIfe);
+            this.panel41.Controls.Add(this.txtTIpe);
+            this.panel41.Controls.Add(this.txtTIfo);
+            this.panel41.Controls.Add(this.txtXi3);
+            this.panel41.Controls.Add(this.txtDPfe);
+            this.panel41.Controls.Add(this.txtDPpe);
+            this.panel41.Controls.Add(this.txtDPfo);
+            this.panel41.Controls.Add(this.txtXi2);
+            this.panel41.Controls.Add(this.txtUPfe);
+            this.panel41.Controls.Add(this.txtUPpe);
+            this.panel41.Controls.Add(this.txtUPfo);
+            this.panel41.Controls.Add(this.txtXi1);
+            this.panel41.Controls.Add(this.txtTDfe);
+            this.panel41.Controls.Add(this.txtTDpe);
+            this.panel41.Controls.Add(this.txtTDfo);
+            this.panel41.ForeColor = System.Drawing.Color.Black;
+            this.panel41.Location = new System.Drawing.Point(209, 86);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(301, 219);
+            this.panel41.TabIndex = 123;
+            // 
+            // txtXi7
+            // 
+            this.txtXi7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtXi7.Enabled = false;
+            this.txtXi7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtXi7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi7.Location = new System.Drawing.Point(232, 194);
+            this.txtXi7.Name = "txtXi7";
+            this.txtXi7.ReadOnly = true;
+            this.txtXi7.Size = new System.Drawing.Size(63, 15);
+            this.txtXi7.TabIndex = 74;
+            this.txtXi7.Text = "2";
+            this.txtXi7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTDIfe
+            // 
+            this.txtTDIfe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTDIfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTDIfe.Enabled = false;
+            this.txtTDIfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTDIfe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTDIfe.Location = new System.Drawing.Point(156, 194);
+            this.txtTDIfe.Name = "txtTDIfe";
+            this.txtTDIfe.ReadOnly = true;
+            this.txtTDIfe.Size = new System.Drawing.Size(63, 15);
+            this.txtTDIfe.TabIndex = 73;
+            this.txtTDIfe.Text = "2";
+            this.txtTDIfe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTDIpe
+            // 
+            this.txtTDIpe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTDIpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTDIpe.Enabled = false;
+            this.txtTDIpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTDIpe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTDIpe.Location = new System.Drawing.Point(74, 194);
+            this.txtTDIpe.Name = "txtTDIpe";
+            this.txtTDIpe.ReadOnly = true;
+            this.txtTDIpe.Size = new System.Drawing.Size(63, 15);
+            this.txtTDIpe.TabIndex = 72;
+            this.txtTDIpe.Text = "2";
+            this.txtTDIpe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTDIfo
+            // 
+            this.txtTDIfo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTDIfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTDIfo.Enabled = false;
+            this.txtTDIfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTDIfo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTDIfo.Location = new System.Drawing.Point(2, 194);
+            this.txtTDIfo.Name = "txtTDIfo";
+            this.txtTDIfo.ReadOnly = true;
+            this.txtTDIfo.Size = new System.Drawing.Size(63, 15);
+            this.txtTDIfo.TabIndex = 71;
+            this.txtTDIfo.Text = "2";
+            this.txtTDIfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtXi6
+            // 
+            this.txtXi6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtXi6.Enabled = false;
+            this.txtXi6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtXi6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi6.Location = new System.Drawing.Point(232, 167);
+            this.txtXi6.Name = "txtXi6";
+            this.txtXi6.ReadOnly = true;
+            this.txtXi6.Size = new System.Drawing.Size(63, 15);
+            this.txtXi6.TabIndex = 70;
+            this.txtXi6.Text = "2";
+            this.txtXi6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtCIfe
+            // 
+            this.txtCIfe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCIfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCIfe.Enabled = false;
+            this.txtCIfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCIfe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCIfe.Location = new System.Drawing.Point(156, 167);
+            this.txtCIfe.Name = "txtCIfe";
+            this.txtCIfe.ReadOnly = true;
+            this.txtCIfe.Size = new System.Drawing.Size(63, 15);
+            this.txtCIfe.TabIndex = 69;
+            this.txtCIfe.Text = "2";
+            this.txtCIfe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtCIpe
+            // 
+            this.txtCIpe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCIpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCIpe.Enabled = false;
+            this.txtCIpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCIpe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCIpe.Location = new System.Drawing.Point(74, 167);
+            this.txtCIpe.Name = "txtCIpe";
+            this.txtCIpe.ReadOnly = true;
+            this.txtCIpe.Size = new System.Drawing.Size(63, 15);
+            this.txtCIpe.TabIndex = 68;
+            this.txtCIpe.Text = "2";
+            this.txtCIpe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtCIfo
+            // 
+            this.txtCIfo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCIfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCIfo.Enabled = false;
+            this.txtCIfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCIfo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCIfo.Location = new System.Drawing.Point(3, 167);
+            this.txtCIfo.Name = "txtCIfo";
+            this.txtCIfo.ReadOnly = true;
+            this.txtCIfo.Size = new System.Drawing.Size(63, 15);
+            this.txtCIfo.TabIndex = 67;
+            this.txtCIfo.Text = "2";
+            this.txtCIfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtXi5
+            // 
+            this.txtXi5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtXi5.Enabled = false;
+            this.txtXi5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtXi5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi5.Location = new System.Drawing.Point(231, 134);
+            this.txtXi5.Name = "txtXi5";
+            this.txtXi5.ReadOnly = true;
+            this.txtXi5.Size = new System.Drawing.Size(63, 15);
+            this.txtXi5.TabIndex = 66;
+            this.txtXi5.Text = "2";
+            this.txtXi5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTIPfe
+            // 
+            this.txtTIPfe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTIPfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTIPfe.Enabled = false;
+            this.txtTIPfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTIPfe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTIPfe.Location = new System.Drawing.Point(156, 134);
+            this.txtTIPfe.Name = "txtTIPfe";
+            this.txtTIPfe.ReadOnly = true;
+            this.txtTIPfe.Size = new System.Drawing.Size(63, 15);
+            this.txtTIPfe.TabIndex = 65;
+            this.txtTIPfe.Text = "2";
+            this.txtTIPfe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTIPpe
+            // 
+            this.txtTIPpe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTIPpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTIPpe.Enabled = false;
+            this.txtTIPpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTIPpe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTIPpe.Location = new System.Drawing.Point(73, 134);
+            this.txtTIPpe.Name = "txtTIPpe";
+            this.txtTIPpe.ReadOnly = true;
+            this.txtTIPpe.Size = new System.Drawing.Size(63, 15);
+            this.txtTIPpe.TabIndex = 64;
+            this.txtTIPpe.Text = "2";
+            this.txtTIPpe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTIPfo
+            // 
+            this.txtTIPfo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTIPfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTIPfo.Enabled = false;
+            this.txtTIPfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTIPfo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTIPfo.Location = new System.Drawing.Point(3, 134);
+            this.txtTIPfo.Name = "txtTIPfo";
+            this.txtTIPfo.ReadOnly = true;
+            this.txtTIPfo.Size = new System.Drawing.Size(63, 15);
+            this.txtTIPfo.TabIndex = 63;
+            this.txtTIPfo.Text = "2";
+            this.txtTIPfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtXi4
+            // 
+            this.txtXi4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtXi4.Enabled = false;
+            this.txtXi4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtXi4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi4.Location = new System.Drawing.Point(235, 104);
+            this.txtXi4.Name = "txtXi4";
+            this.txtXi4.ReadOnly = true;
+            this.txtXi4.Size = new System.Drawing.Size(63, 15);
+            this.txtXi4.TabIndex = 62;
+            this.txtXi4.Text = "2";
+            this.txtXi4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTIfe
+            // 
+            this.txtTIfe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTIfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTIfe.Enabled = false;
+            this.txtTIfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTIfe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTIfe.Location = new System.Drawing.Point(156, 104);
+            this.txtTIfe.Name = "txtTIfe";
+            this.txtTIfe.ReadOnly = true;
+            this.txtTIfe.Size = new System.Drawing.Size(63, 15);
+            this.txtTIfe.TabIndex = 61;
+            this.txtTIfe.Text = "2";
+            this.txtTIfe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTIpe
+            // 
+            this.txtTIpe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTIpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTIpe.Enabled = false;
+            this.txtTIpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTIpe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTIpe.Location = new System.Drawing.Point(74, 104);
+            this.txtTIpe.Name = "txtTIpe";
+            this.txtTIpe.ReadOnly = true;
+            this.txtTIpe.Size = new System.Drawing.Size(63, 15);
+            this.txtTIpe.TabIndex = 60;
+            this.txtTIpe.Text = "2";
+            this.txtTIpe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTIfo
+            // 
+            this.txtTIfo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTIfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTIfo.Enabled = false;
+            this.txtTIfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTIfo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTIfo.Location = new System.Drawing.Point(4, 105);
+            this.txtTIfo.Name = "txtTIfo";
+            this.txtTIfo.ReadOnly = true;
+            this.txtTIfo.Size = new System.Drawing.Size(63, 15);
+            this.txtTIfo.TabIndex = 59;
+            this.txtTIfo.Text = "2";
+            this.txtTIfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtXi3
+            // 
+            this.txtXi3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtXi3.Enabled = false;
+            this.txtXi3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtXi3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi3.Location = new System.Drawing.Point(235, 74);
+            this.txtXi3.Name = "txtXi3";
+            this.txtXi3.ReadOnly = true;
+            this.txtXi3.Size = new System.Drawing.Size(63, 15);
+            this.txtXi3.TabIndex = 58;
+            this.txtXi3.Text = "2";
+            this.txtXi3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDPfe
+            // 
+            this.txtDPfe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtDPfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDPfe.Enabled = false;
+            this.txtDPfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDPfe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtDPfe.Location = new System.Drawing.Point(156, 72);
+            this.txtDPfe.Name = "txtDPfe";
+            this.txtDPfe.ReadOnly = true;
+            this.txtDPfe.Size = new System.Drawing.Size(63, 15);
+            this.txtDPfe.TabIndex = 57;
+            this.txtDPfe.Text = "2";
+            this.txtDPfe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDPpe
+            // 
+            this.txtDPpe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtDPpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDPpe.Enabled = false;
+            this.txtDPpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDPpe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtDPpe.Location = new System.Drawing.Point(74, 72);
+            this.txtDPpe.Name = "txtDPpe";
+            this.txtDPpe.ReadOnly = true;
+            this.txtDPpe.Size = new System.Drawing.Size(63, 15);
+            this.txtDPpe.TabIndex = 56;
+            this.txtDPpe.Text = "2";
+            this.txtDPpe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDPfo
+            // 
+            this.txtDPfo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtDPfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDPfo.Enabled = false;
+            this.txtDPfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDPfo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtDPfo.Location = new System.Drawing.Point(2, 72);
+            this.txtDPfo.Name = "txtDPfo";
+            this.txtDPfo.ReadOnly = true;
+            this.txtDPfo.Size = new System.Drawing.Size(63, 15);
+            this.txtDPfo.TabIndex = 55;
+            this.txtDPfo.Text = "2";
+            this.txtDPfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtXi2
+            // 
+            this.txtXi2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtXi2.Enabled = false;
+            this.txtXi2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtXi2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi2.Location = new System.Drawing.Point(235, 39);
+            this.txtXi2.Name = "txtXi2";
+            this.txtXi2.ReadOnly = true;
+            this.txtXi2.Size = new System.Drawing.Size(63, 15);
+            this.txtXi2.TabIndex = 54;
+            this.txtXi2.Text = "2";
+            this.txtXi2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtUPfe
+            // 
+            this.txtUPfe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUPfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUPfe.Enabled = false;
+            this.txtUPfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUPfe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUPfe.Location = new System.Drawing.Point(156, 39);
+            this.txtUPfe.Name = "txtUPfe";
+            this.txtUPfe.ReadOnly = true;
+            this.txtUPfe.Size = new System.Drawing.Size(63, 15);
+            this.txtUPfe.TabIndex = 53;
+            this.txtUPfe.Text = "2";
+            this.txtUPfe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtUPpe
+            // 
+            this.txtUPpe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUPpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUPpe.Enabled = false;
+            this.txtUPpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUPpe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUPpe.Location = new System.Drawing.Point(74, 39);
+            this.txtUPpe.Name = "txtUPpe";
+            this.txtUPpe.ReadOnly = true;
+            this.txtUPpe.Size = new System.Drawing.Size(63, 15);
+            this.txtUPpe.TabIndex = 52;
+            this.txtUPpe.Text = "2";
+            this.txtUPpe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtUPfo
+            // 
+            this.txtUPfo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUPfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUPfo.Enabled = false;
+            this.txtUPfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUPfo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUPfo.Location = new System.Drawing.Point(4, 39);
+            this.txtUPfo.Name = "txtUPfo";
+            this.txtUPfo.ReadOnly = true;
+            this.txtUPfo.Size = new System.Drawing.Size(63, 15);
+            this.txtUPfo.TabIndex = 51;
+            this.txtUPfo.Text = "2";
+            this.txtUPfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtXi1
+            // 
+            this.txtXi1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtXi1.Enabled = false;
+            this.txtXi1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtXi1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtXi1.Location = new System.Drawing.Point(235, 6);
+            this.txtXi1.Name = "txtXi1";
+            this.txtXi1.ReadOnly = true;
+            this.txtXi1.Size = new System.Drawing.Size(63, 15);
+            this.txtXi1.TabIndex = 50;
+            this.txtXi1.Text = "2";
+            this.txtXi1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTDfe
+            // 
+            this.txtTDfe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTDfe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTDfe.Enabled = false;
+            this.txtTDfe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTDfe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTDfe.Location = new System.Drawing.Point(156, 7);
+            this.txtTDfe.Name = "txtTDfe";
+            this.txtTDfe.ReadOnly = true;
+            this.txtTDfe.Size = new System.Drawing.Size(63, 15);
+            this.txtTDfe.TabIndex = 49;
+            this.txtTDfe.Text = "2";
+            this.txtTDfe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTDpe
+            // 
+            this.txtTDpe.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTDpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTDpe.Enabled = false;
+            this.txtTDpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTDpe.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTDpe.Location = new System.Drawing.Point(79, 6);
+            this.txtTDpe.Name = "txtTDpe";
+            this.txtTDpe.ReadOnly = true;
+            this.txtTDpe.Size = new System.Drawing.Size(63, 15);
+            this.txtTDpe.TabIndex = 48;
+            this.txtTDpe.Text = "2";
+            this.txtTDpe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtTDfo
+            // 
+            this.txtTDfo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTDfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTDfo.Enabled = false;
+            this.txtTDfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTDfo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTDfo.Location = new System.Drawing.Point(3, 6);
+            this.txtTDfo.Name = "txtTDfo";
+            this.txtTDfo.ReadOnly = true;
+            this.txtTDfo.Size = new System.Drawing.Size(63, 15);
+            this.txtTDfo.TabIndex = 47;
+            this.txtTDfo.Text = "2";
+            this.txtTDfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label49.ForeColor = System.Drawing.Color.Black;
+            this.label49.Location = new System.Drawing.Point(69, 26);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(141, 20);
+            this.label49.TabIndex = 109;
+            this.label49.Text = "Prueba de poker";
+            // 
+            // panel36
+            // 
+            this.panel36.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel36.ForeColor = System.Drawing.Color.Black;
+            this.panel36.Location = new System.Drawing.Point(210, 88);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(300, 2);
+            this.panel36.TabIndex = 108;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Encuestas_Restaurante.Properties.Resources.desviacion;
+            this.pictureBox6.Location = new System.Drawing.Point(575, 4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 131;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Encuestas_Restaurante.Properties.Resources.juego_de_cartas;
+            this.pictureBox5.Location = new System.Drawing.Point(18, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 110;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Encuestas_Restaurante.Properties.Resources.desviacion;
+            this.pictureBox4.Location = new System.Drawing.Point(578, 6);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 70;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Encuestas_Restaurante.Properties.Resources.frecuencia;
+            this.pictureBox3.Location = new System.Drawing.Point(11, 6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(37, 43);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 68;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Encuestas_Restaurante.Properties.Resources.promedio;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(38, 41);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Encuestas_Restaurante.Properties.Resources.desviacion;
+            this.pictureBox1.Location = new System.Drawing.Point(576, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.ImageActive = null;
+            this.btnCerrar.Location = new System.Drawing.Point(623, 8);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(27, 24);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 29;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Zoom = 10;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // panel37
+            // 
+            this.panel37.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel37.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel37.ForeColor = System.Drawing.Color.Black;
+            this.panel37.Location = new System.Drawing.Point(0, 0);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(301, 2);
+            this.panel37.TabIndex = 118;
             // 
             // frmPruebas
             // 
@@ -1190,19 +2141,25 @@
             this.panel11.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.pnCasos.ResumeLayout(false);
             this.pnCasos.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel41.ResumeLayout(false);
+            this.panel41.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1304,5 +2261,70 @@
         private System.Windows.Forms.Panel panel6;
         private ns1.BunifuElipse rdForma;
         private ns1.BunifuElipse rdCasos;
+        public System.Windows.Forms.Label label47;
+        public System.Windows.Forms.Label lblSigPok;
+        public System.Windows.Forms.Label lblResultFe;
+        public System.Windows.Forms.Label lblresultPe;
+        public System.Windows.Forms.Label lblResultFo;
+        public System.Windows.Forms.Label lblResPoker;
+        public System.Windows.Forms.Label label48;
+        public System.Windows.Forms.Label lblResultXi;
+        public System.Windows.Forms.Label label40;
+        public System.Windows.Forms.Label label39;
+        public System.Windows.Forms.Label label38;
+        public System.Windows.Forms.Label label37;
+        public System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.Label label36;
+        public System.Windows.Forms.Label label24;
+        public System.Windows.Forms.Label label23;
+        public System.Windows.Forms.Label label22;
+        public System.Windows.Forms.Label label21;
+        public System.Windows.Forms.Label label20;
+        public System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Panel panel40;
+        private System.Windows.Forms.Panel panel39;
+        private System.Windows.Forms.Panel panel32;
+        private System.Windows.Forms.Panel panel31;
+        private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Panel panel33;
+        private System.Windows.Forms.Panel panel34;
+        private System.Windows.Forms.Panel panel35;
+        public System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Panel panel41;
+        public System.Windows.Forms.TextBox txtXi7;
+        public System.Windows.Forms.TextBox txtTDIfe;
+        public System.Windows.Forms.TextBox txtTDIpe;
+        public System.Windows.Forms.TextBox txtTDIfo;
+        public System.Windows.Forms.TextBox txtXi6;
+        public System.Windows.Forms.TextBox txtCIfe;
+        public System.Windows.Forms.TextBox txtCIpe;
+        public System.Windows.Forms.TextBox txtCIfo;
+        public System.Windows.Forms.TextBox txtXi5;
+        public System.Windows.Forms.TextBox txtTIPfe;
+        public System.Windows.Forms.TextBox txtTIPpe;
+        public System.Windows.Forms.TextBox txtTIPfo;
+        public System.Windows.Forms.TextBox txtXi4;
+        public System.Windows.Forms.TextBox txtTIfe;
+        public System.Windows.Forms.TextBox txtTIpe;
+        public System.Windows.Forms.TextBox txtTIfo;
+        public System.Windows.Forms.TextBox txtXi3;
+        public System.Windows.Forms.TextBox txtDPfe;
+        public System.Windows.Forms.TextBox txtDPpe;
+        public System.Windows.Forms.TextBox txtDPfo;
+        public System.Windows.Forms.TextBox txtXi2;
+        public System.Windows.Forms.TextBox txtUPfe;
+        public System.Windows.Forms.TextBox txtUPpe;
+        public System.Windows.Forms.TextBox txtUPfo;
+        public System.Windows.Forms.TextBox txtXi1;
+        public System.Windows.Forms.TextBox txtTDfe;
+        public System.Windows.Forms.TextBox txtTDpe;
+        public System.Windows.Forms.TextBox txtTDfo;
+        public System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Panel panel36;
+        private System.Windows.Forms.Panel panel37;
     }
 }

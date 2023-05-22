@@ -293,7 +293,7 @@
             this.txtSemilla.Name = "txtSemilla";
             this.txtSemilla.Size = new System.Drawing.Size(94, 25);
             this.txtSemilla.TabIndex = 23;
-            this.txtSemilla.Text = "12";
+            this.txtSemilla.Text = "27";
             // 
             // bunifuCustomLabel3
             // 

@@ -118,6 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="juego-de-cartas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\juego-de-cartas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="promedio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\promedio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="desviacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desviacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="marca-x-Blanca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marca-x-Blanca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -126,5 +135,8 @@
   </data>
   <data name="experiencia-del-cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\experiencia-del-cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frecuencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frecuencia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -63,6 +63,16 @@ namespace Encuestas_Restaurante.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap desviacion {
+            get {
+                object obj = ResourceManager.GetObject("desviacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap experiencia_del_cliente {
             get {
                 object obj = ResourceManager.GetObject("experiencia-del-cliente", resourceCulture);
@@ -73,9 +83,39 @@ namespace Encuestas_Restaurante.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap frecuencia {
+            get {
+                object obj = ResourceManager.GetObject("frecuencia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap juego_de_cartas {
+            get {
+                object obj = ResourceManager.GetObject("juego-de-cartas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap marca_x_Blanca {
             get {
                 object obj = ResourceManager.GetObject("marca-x-Blanca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap promedio {
+            get {
+                object obj = ResourceManager.GetObject("promedio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

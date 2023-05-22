@@ -46,6 +46,7 @@ namespace Encuestas_Restaurante
         bool numerosGenerados = false;
         private void cmdGenerarNumeros_Click(object sender, EventArgs e)
         {
+            numeros.ObtenerObjetoPruebas(pruebas);
             numeros.numerosGenerados = false;
             numeros.ShowDialog();
 
@@ -277,8 +278,12 @@ namespace Encuestas_Restaurante
                         dgvResultados.Rows[renglon].Cells[3].Value = comida;
                         dgvResultados.Rows[renglon].Cells[4].Value = limpieza;
 
-                        string w  = $"Las respuestas más obtenidas hacia\r\n" +
-                            $"los meseros fue: {RecorrerMeseros(mes)}";
+                        string w  = "Las respuestas más obtenidas hacia:" +
+                            $"\r\n - Meseros:{RecorrerMeseros(mes)}" +
+                            $"\r\n - Comida:{RecorrerComida(com)}" +
+                            $"\r\n - Limpieza:{RecorrerLimpieza(lim)}";
+
+                        dgvResultados.Rows[renglon].Cells[5].Value = w;
 
 
                         dias++;

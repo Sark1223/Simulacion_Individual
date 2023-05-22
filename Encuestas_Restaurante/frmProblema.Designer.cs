@@ -1040,7 +1040,7 @@
             // 
             // dgvResultados
             // 
-            this.dgvResultados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvResultados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvResultados.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvResultados.BackgroundColor = System.Drawing.Color.White;
             this.dgvResultados.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -1076,7 +1076,6 @@
             this.dgvResultados.ReadOnly = true;
             this.dgvResultados.RowHeadersVisible = false;
             this.dgvResultados.RowHeadersWidth = 100;
-            this.dgvResultados.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvResultados.Size = new System.Drawing.Size(818, 992);
             this.dgvResultados.TabIndex = 6;
             // 
@@ -1117,6 +1116,7 @@
             // 
             // Column1
             // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column1.HeaderText = "Conclusión";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
@@ -1282,13 +1282,13 @@
         public System.Windows.Forms.Label lblMeseros;
         private ns1.BunifuElipse rdConclusionG;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dia;
         private System.Windows.Forms.DataGridViewTextBoxColumn a;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.Panel panel5;
     }
 }
 

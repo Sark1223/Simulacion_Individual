@@ -118,8 +118,6 @@
             this.label32 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.rdForma = new ns1.BunifuElipse(this.components);
-            this.rdCasos = new ns1.BunifuElipse(this.components);
             this.label47 = new System.Windows.Forms.Label();
             this.lblSigPok = new System.Windows.Forms.Label();
             this.lblResultFe = new System.Windows.Forms.Label();
@@ -152,6 +150,7 @@
             this.panel34 = new System.Windows.Forms.Panel();
             this.panel35 = new System.Windows.Forms.Panel();
             this.panel41 = new System.Windows.Forms.Panel();
+            this.panel37 = new System.Windows.Forms.Panel();
             this.txtXi7 = new System.Windows.Forms.TextBox();
             this.txtTDIfe = new System.Windows.Forms.TextBox();
             this.txtTDIpe = new System.Windows.Forms.TextBox();
@@ -182,6 +181,8 @@
             this.txtTDfo = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.panel36 = new System.Windows.Forms.Panel();
+            this.rdForma = new ns1.BunifuElipse(this.components);
+            this.rdCasos = new ns1.BunifuElipse(this.components);
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -189,7 +190,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new ns1.BunifuImageButton();
-            this.panel37 = new System.Windows.Forms.Panel();
             this.panel11.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnCasos.SuspendLayout();
@@ -268,6 +268,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(668, 102);
             this.panel1.TabIndex = 29;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mover);
             // 
             // label17
             // 
@@ -279,6 +280,7 @@
             this.label17.Size = new System.Drawing.Size(290, 33);
             this.label17.TabIndex = 30;
             this.label17.Text = "PRUEBAS REALIZADAS";
+            this.label17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mover);
             // 
             // panel10
             // 
@@ -1212,16 +1214,6 @@
             this.panel6.Size = new System.Drawing.Size(662, 373);
             this.panel6.TabIndex = 36;
             // 
-            // rdForma
-            // 
-            this.rdForma.ElipseRadius = 10;
-            this.rdForma.TargetControl = this;
-            // 
-            // rdCasos
-            // 
-            this.rdCasos.ElipseRadius = 35;
-            this.rdCasos.TargetControl = this.pnCasos;
-            // 
             // label47
             // 
             this.label47.AutoSize = true;
@@ -1593,6 +1585,16 @@
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(301, 219);
             this.panel41.TabIndex = 123;
+            // 
+            // panel37
+            // 
+            this.panel37.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel37.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel37.ForeColor = System.Drawing.Color.Black;
+            this.panel37.Location = new System.Drawing.Point(0, 0);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(301, 2);
+            this.panel37.TabIndex = 118;
             // 
             // txtXi7
             // 
@@ -2034,6 +2036,16 @@
             this.panel36.Size = new System.Drawing.Size(300, 2);
             this.panel36.TabIndex = 108;
             // 
+            // rdForma
+            // 
+            this.rdForma.ElipseRadius = 10;
+            this.rdForma.TargetControl = this;
+            // 
+            // rdCasos
+            // 
+            this.rdCasos.ElipseRadius = 35;
+            this.rdCasos.TargetControl = this.pnCasos;
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Encuestas_Restaurante.Properties.Resources.desviacion;
@@ -2108,16 +2120,6 @@
             this.btnCerrar.Zoom = 10;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // panel37
-            // 
-            this.panel37.BackColor = System.Drawing.Color.MediumPurple;
-            this.panel37.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel37.ForeColor = System.Drawing.Color.Black;
-            this.panel37.Location = new System.Drawing.Point(0, 0);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(301, 2);
-            this.panel37.TabIndex = 118;
-            // 
             // frmPruebas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2134,6 +2136,7 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPruebas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPruebas";

@@ -110,109 +110,125 @@ namespace Encuestas_Restaurante
 
         private void cmdGenerar_Click(object sender, EventArgs e)
         {
-            no_pruebas = 0;
-            //numeros.tablaResultados.Clear();
-            tblPseudo.Rows.Clear();
-            //numeros.tblPseudo.ClearSelection();
-            lista.Clear();
-            numerosGenerados = false;
-
-            if (rb10.Checked == true)
+            if(!ValidarA && !ValidarC && !ValidarM && !ValidarSemilla)
             {
-                Za = 1.645F;
-                Z2 = 6.2514F;
+                no_pruebas = 0;
+                //numeros.tablaResultados.Clear();
+                tblPseudo.Rows.Clear();
+                //numeros.tblPseudo.ClearSelection();
+                lista.Clear();
+                numerosGenerados = false;
+
+                if (rb10.Checked == true)
+                {
+                    Za = 1.645F;
+                    Z2 = 6.2514F;
+                }
+                else if (rb5.Checked == true)
+                {
+                    Za = 1.96F;
+                    Z2 = 7.8147F;
+                }
+
+                GenerarObjeto();
+
+                //valor semilla de la que se basaran nuestros numeros
+                float x0 = g.X0;
+                int n = 0;
+
+                for (int i = 0; i < 1050; i++)
+                {
+                    //si es el primero numero generado entonces 
+                    if (i == 0)
+                    {
+                        //contador inicia en 1
+                        g.N = i + 1;
+                        //se recibe nuestra semilla
+                        g.Xn = g.X0;
+                        //formula de nuestro metodo congruencial mixto
+                        g.Res = (g.a * g.Xn) + g.c;
+                        //obtenemos el modulo del resultado anterior
+                        g.modulo = g.Res % g.m;
+                        //lo dividimos entre nuestra constante m y le restamos 1 al resultado
+                        g.Ri = g.modulo / g.m;
+
+                        lista.Add(g);
+
+                        //Agrega valores a las filas de la tabla
+                        n = tblPseudo.Rows.Add();
+                        tblPseudo.Rows[n].Cells[0].Value = n + 1;
+                        tblPseudo.Rows[n].Cells[1].Value = lista[n].Ri;
+
+                        Ri[i] = g.Ri;
+                    }
+                    else
+                    {
+                        GenerarObjeto();
+                        //contador inicia en 1
+                        g.N = i + 1;
+                        //se recibe nuestra semilla
+                        g.Xn = lista[i - 1].modulo;
+                        //formula de nuestro metodo congruencial mixto
+                        g.Res = (g.a * g.Xn) + g.c;
+                        //obtenemos el modulo del resultado anterior
+                        g.modulo = g.Res % g.m;
+                        //lo dividimos entre nuestra constante m y le restamos 1 al resultado
+                        g.Ri = g.modulo / g.m;
+
+                        lista.Add(g);
+
+                        //Agrega valores a las filas de la tabla
+                        n = tblPseudo.Rows.Add();
+                        tblPseudo.Rows[n].Cells[0].Value = n + 1;
+                        tblPseudo.Rows[n].Cells[1].Value = lista[n].Ri;
+
+                        Ri[i] = g.Ri;
+                    }
+                }
+
+                numerosGenerados = true;
+
+                if (numerosGenerados)
+                {
+                    Realizar_PruebaPromedios();
+                    Realizar_PruebaFrecuencia();
+                    Realizar_PruebaPoker();
+                    ImprimirPoker();
+                    DialogResult respuesta;
+                    if (no_pruebas == 3)
+                    {
+                        respuesta = MessageBox.Show("No. pruebas superadas: 3/3 \r\nLos números generados se encuentran distribuidos uniformemente.\r\n " +
+                            "¿Desea visualizar las pruebas?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    }
+                    else if (no_pruebas == 2)
+                    {
+                        respuesta = MessageBox.Show("No. pruebas superadas: 2/3 \r\nLos números generados no son del todo confiables para realizar los experimentos.\r\n " +
+                            "¿Desea visualizar las pruebas?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                    }
+                    else if (no_pruebas == 1)
+                    {
+                        respuesta = MessageBox.Show("No. pruebas superadas: 1/3 \r\nLos números generados no estan distribuidos uniformemente, " +
+                            "pueden generar resultados no confiables.\r\n " +
+                            "¿Desea visualizar las pruebas?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    }
+                    else
+                    {
+                        respuesta = MessageBox.Show("No. pruebas superadas: 0/3 \r\nNo se recomienda utilizar estos números para realizar los experimentos.\r\n " +
+                            "¿Desea visualizar las pruebas?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                    }
+
+                    if(respuesta == DialogResult.Yes)
+                    {
+                        pruebas.Show();
+                    }
+                }
             }
-            else if (rb5.Checked == true)
+            else
             {
-                Za = 1.96F;
-                Z2 = 7.8147F;
+                MessageBox.Show("Verifique los datos", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-            GenerarObjeto();
             
-
-            //valor semilla de la que se basaran nuestros numeros
-            float x0 = g.X0;
-            int n = 0;
-
-            for (int i = 0; i < 1050; i++)
-            {
-                //si es el primero numero generado entonces 
-                if (i == 0)
-                {
-                    //contador inicia en 1
-                    g.N = i + 1;
-                    //se recibe nuestra semilla
-                    g.Xn = g.X0;
-                    //formula de nuestro metodo congruencial mixto
-                    g.Res = (g.a * g.Xn) + g.c;
-                    //obtenemos el modulo del resultado anterior
-                    g.modulo = g.Res % g.m;
-                    //lo dividimos entre nuestra constante m y le restamos 1 al resultado
-                    g.Ri = g.modulo / g.m;
-
-                    lista.Add(g);
-
-                    //Agrega valores a las filas de la tabla
-                    n = tblPseudo.Rows.Add();
-                    tblPseudo.Rows[n].Cells[0].Value = n + 1;
-                    tblPseudo.Rows[n].Cells[1].Value = lista[n].Ri;
-
-                    Ri[i] = g.Ri;
-                }
-                else
-                {
-                    GenerarObjeto();
-                    //contador inicia en 1
-                    g.N = i + 1;
-                    //se recibe nuestra semilla
-                    g.Xn = lista[i - 1].modulo;
-                    //formula de nuestro metodo congruencial mixto
-                    g.Res = (g.a * g.Xn) + g.c;
-                    //obtenemos el modulo del resultado anterior
-                    g.modulo = g.Res % g.m;
-                    //lo dividimos entre nuestra constante m y le restamos 1 al resultado
-                    g.Ri = g.modulo / g.m;
-
-                    lista.Add(g);
-
-                    //Agrega valores a las filas de la tabla
-                    n = tblPseudo.Rows.Add();
-                    tblPseudo.Rows[n].Cells[0].Value = n + 1;
-                    tblPseudo.Rows[n].Cells[1].Value = lista[n].Ri;
-
-                    Ri[i] = g.Ri;
-                }
-            }
-
-            numerosGenerados = true;
-
-            if (numerosGenerados)
-            {
-                Realizar_PruebaPromedios();
-                Realizar_PruebaFrecuencia();
-                Realizar_PruebaPoker();
-                ImprimirPoker();
-                if (no_pruebas == 3)
-                {
-                    MessageBox.Show("No. pruebas superadas: 3/3 \r\nLos números generados se encuentran distribuidos uniformemente.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if (no_pruebas == 2)
-                {
-                    MessageBox.Show("No. pruebas superadas: 2/3 \r\nLos números generados no son del todo confiables para realizar los experimentos.", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-                else if (no_pruebas == 1)
-                {
-                    MessageBox.Show("No. pruebas superadas: 1/3 \r\nLos números generados no estan distribuidos uniformemente, " +
-                        "pueden generar resultados no confiables.", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                }
-                else
-                {
-                    MessageBox.Show("No. pruebas superadas: 0/3 \r\nNo se recomienda utilizar estos números para realizar los experimentos.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
         }
 
         //PRUEBAS ---------------------------------------------------------------------------
@@ -603,6 +619,74 @@ namespace Encuestas_Restaurante
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        //vlaidar valores ------------------------------------------
+        ValidacionDeValores validacion = new ValidacionDeValores();
+        bool ValidarA, ValidarM, ValidarC, ValidarSemilla;
+
+        private void txtA_Validating(object sender, CancelEventArgs e)
+        {
+            ValidarA = validacion.ValidarNumeros(txtA, error, e);
+        }
+
+        private void txtA_Validated(object sender, EventArgs e)
+        {
+            error.SetError(txtA, "");
+        }
+
+        private void txtA_TextChanged(object sender, EventArgs e)
+        {
+            //Desconfirmado(cmdConfirmarSer);
+            //Meseros = false;
+        }
+
+        private void txtM_Validating(object sender, CancelEventArgs e)
+        {
+            ValidarM = validacion.ValidarNumeros(txtM, error, e);
+        }
+
+        private void txtM_Validated(object sender, EventArgs e)
+        {
+            error.SetError(txtM, "");
+        }
+
+        private void txtM_TextChanged(object sender, EventArgs e)
+        {
+            //Desconfirmado(cmdConfirmarSer);
+            //Meseros = false;
+        }
+
+        private void txtC_Validating(object sender, CancelEventArgs e)
+        {
+            ValidarC = validacion.ValidarNumeros(txtC, error, e);
+        }
+
+        private void txtC_Validated(object sender, EventArgs e)
+        {
+            error.SetError(txtC, "");
+        }
+
+        private void txtC_TextChanged(object sender, EventArgs e)
+        {
+            //Desconfirmado(cmdConfirmarSer);
+            //Meseros = false;
+        }
+
+        private void txtSemilla_Validating(object sender, CancelEventArgs e)
+        {
+            ValidarA = validacion.ValidarNumeros(txtSemilla, error, e);
+        }
+
+        private void txtSemilla_Validated(object sender, EventArgs e)
+        {
+            error.SetError(txtSemilla, "");
+        }
+
+        private void txtSemilla_TextChanged(object sender, EventArgs e)
+        {
+            //Desconfirmado(cmdConfirmarSer);
+            //Meseros = false;
         }
 
     }

@@ -65,12 +65,14 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rdForma = new ns1.BunifuElipse(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel5.SuspendLayout();
             this.panTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblPseudo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.SuspendLayout();
             // 
             // panel8
@@ -237,6 +239,9 @@
             this.txtM.Size = new System.Drawing.Size(92, 25);
             this.txtM.TabIndex = 26;
             this.txtM.Text = "17001";
+            this.txtM.TextChanged += new System.EventHandler(this.txtM_TextChanged);
+            this.txtM.Validating += new System.ComponentModel.CancelEventHandler(this.txtM_Validating);
+            this.txtM.Validated += new System.EventHandler(this.txtM_Validated);
             // 
             // panel3
             // 
@@ -256,6 +261,9 @@
             this.txtC.Size = new System.Drawing.Size(92, 25);
             this.txtC.TabIndex = 25;
             this.txtC.Text = "221";
+            this.txtC.TextChanged += new System.EventHandler(this.txtC_TextChanged);
+            this.txtC.Validating += new System.ComponentModel.CancelEventHandler(this.txtC_Validating);
+            this.txtC.Validated += new System.EventHandler(this.txtC_Validated);
             // 
             // panel2
             // 
@@ -275,6 +283,9 @@
             this.txtA.Size = new System.Drawing.Size(92, 25);
             this.txtA.TabIndex = 24;
             this.txtA.Text = "101";
+            this.txtA.TextChanged += new System.EventHandler(this.txtA_TextChanged);
+            this.txtA.Validating += new System.ComponentModel.CancelEventHandler(this.txtA_Validating);
+            this.txtA.Validated += new System.EventHandler(this.txtA_Validated);
             // 
             // panel1
             // 
@@ -294,6 +305,9 @@
             this.txtSemilla.Size = new System.Drawing.Size(94, 25);
             this.txtSemilla.TabIndex = 23;
             this.txtSemilla.Text = "27";
+            this.txtSemilla.TextChanged += new System.EventHandler(this.txtSemilla_TextChanged);
+            this.txtSemilla.Validating += new System.ComponentModel.CancelEventHandler(this.txtSemilla_Validating);
+            this.txtSemilla.Validated += new System.EventHandler(this.txtSemilla_Validated);
             // 
             // bunifuCustomLabel3
             // 
@@ -438,6 +452,11 @@
             this.pictureBox2.TabIndex = 42;
             this.pictureBox2.TabStop = false;
             // 
+            // error
+            // 
+            this.error.ContainerControl = this;
+            this.error.Icon = ((System.Drawing.Icon)(resources.GetObject("error.Icon")));
+            // 
             // frmNumeros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -466,6 +485,7 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmNumeros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNumeros";
@@ -479,6 +499,7 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblPseudo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -495,17 +516,17 @@
         private ns1.BunifuImageButton btnCerrar;
         private System.Windows.Forms.Panel panel6;
         private ns1.BunifuCustomLabel bunifuCustomLabel4;
-        private System.Windows.Forms.RadioButton rb10;
-        private System.Windows.Forms.RadioButton rb5;
+        public System.Windows.Forms.RadioButton rb10;
+        public System.Windows.Forms.RadioButton rb5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txtM;
+        public System.Windows.Forms.TextBox txtM;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtC;
+        public System.Windows.Forms.TextBox txtC;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtA;
+        public System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtSemilla;
+        public System.Windows.Forms.TextBox txtSemilla;
         private ns1.BunifuCustomLabel bunifuCustomLabel3;
         private ns1.BunifuCustomLabel bunifuCustomLabel2;
         private ns1.BunifuCustomLabel bunifuCustomLabel1;
@@ -516,5 +537,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private ns1.BunifuElipse rdForma;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ErrorProvider error;
     }
 }

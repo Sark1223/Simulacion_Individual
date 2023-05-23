@@ -270,14 +270,41 @@
         44/m5/rfyDfkHZNzvZ3m/bNbOp3/D5ilCJpvynj3AAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="dataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="rdForma.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn8.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -564,55 +591,6 @@
         AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAeAAAAH/////4AAAAf/////wAAAD//////gAAAf/////+AA
         AB//////8AAAP//////8AAD///////4AAf///////4AH//////8=
-</value>
-  </data>
-  <metadata name="error.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>115, 17</value>
-  </metadata>
-  <data name="error.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAGBgAAAEAIACICQAAFgAAACgAAAAYAAAAMAAAAAEAIAAAAAAAAAkAAIUAAACFAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwAmLrYAHyXpAB0k7QAd
-        JO0AHSTtAB0k7QAdJO0AHSTtAB0k7QAdJO0AHSTtAB0k7QAdJO0AHSTtAB0k7QAdJO0AHSTtABwj7AEW
-        HOAAFBqmAAAAHwAAAAAAAAAoACAn9ACguf8A2Pr/ANz//wDc//8A3P//ANz//wDc//8A3P//ANz//wDc
-        //8A3P//ANz//wDc//8A3P//ANz//wDc//8A3P//ANz//wDX+v8Ek7j+ARUb6AAAACgAIyvWALLO/wDc
-        //8A3P//ANz//wDc//8A3P//ANz//wDc//8A3P//ArXR/w0yNv8HNTv/ALjV/wDc//8A3P//ANz//wDc
-        //8A3P//ANz//wDc//8A2///Bp7N/wEVGsUAIir1ANz//wDc//8A3P//ANz//wDc//8A3P//ANz//wDc
-        //8A3P//ESEg/3VpUf9NRjb/ByQo/wDc//8A3P//ANz//wDc//8A3P//ANz//wDc//8A3P//Bcr+/wEX
-        H+gAHyf0ANv+/wDc//8A3P//ANz//wDc//8A3P//ANz//wDc//8A3P//ERkX/4l8X/9iWUT/CBoc/wDc
-        //8A3P//ANz//wDc//8A3P//ANz//wDc//8A3P//Bsj9/wEVGucAJCu2AJqy/wDc//8A3P//ANz//wDc
-        //8A3P//ANz//wDc//8A3P//DnB9/xcdGf8NHB3/BHeJ/wDc//8A3P//ANz//wDc//8A3P//ANz//wDc
-        //8B2f//Boix/AAUGqcAAAAXACMr9gDW+P8A3P//ANz//wDc//8A3P//ANz//wDc//8A3P//ANz//wDJ
-        6f8Ayen/ANz//wDc//8A3P//ANz//wDc//8A3P//ANz//wDc//8Fxvj/ARgg6QAAABkAAAAAAhwihwF0
-        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
-        /wA=
 </value>
   </data>
 </root>

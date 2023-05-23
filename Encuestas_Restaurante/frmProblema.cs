@@ -39,6 +39,7 @@ namespace Encuestas_Restaurante
         frmHistorial historial = new frmHistorial();
         frmPruebas pruebas = new frmPruebas();
         frmNumeros numeros = new frmNumeros();
+        frmIntervalos intervalos = new frmIntervalos();
 
         //Arreglo para guardar numeros
         public float[] Ri = new float[1050];
@@ -308,31 +309,186 @@ namespace Encuestas_Restaurante
                     lblComida.Text = "La calidad del estado en el que se encontraba la comida fue mayormente: " + resComida;
                     lblLimpieza.Text = "Segun los clientes encuestados, la limpieza del restaurante se encontraba mayormente: " + resLimpieza;
 
-                    if (resMeseros == "Excelente" && resComida == "Excelente presentación" && resLimpieza == "Limpio")
+
+                    //Resultados
                     {
 
-                    }
-                    else if (resMeseros == "Excelente" && resComida == "Excelente presentación" && resLimpieza == "Aceptable")
-                    {
+                        if (resMeseros == "Excelente" && resComida == "Excelente presentación" && resLimpieza == "Limpio")
+                        {
+                            txtConclusionGeneral.Text = "El servicio de los meseros, la limpieza del restaurante y el estado de la comida" +
+                                " se encuentran en condiciones excelentes, el problema se podria encontrar en un punto no contemplado ó que " +
+                                "las calificaciones recibidas en las paginas sean falsas.";
+                        }
 
-                    }
-                    else if (resMeseros == "Excelente" && resComida == "Mal servida" && resLimpieza == "Aceptable")
-                    {
+                        else if (resMeseros == "Excelente" && resComida == "Excelente presentación" && resLimpieza == "Aceptable")
+                        {
+                            txtConclusionGeneral.Text = "El servicio de los meseros y la calidad de la comida son excelentes, hay un pequeño detalle " +
+                                "en la limpieza, puede ser el motivo de las calificaciones negativas.";
+                        }
 
-                    }
-                    else if(resMeseros == "Buena" && resComida == "Mal servida" && resLimpieza == "Aceptable")
-                    {
+                        else if (resMeseros == "Excelente" && resComida == "Excelente presentación" && resLimpieza == "Sucio")
+                        {
+                            txtConclusionGeneral.Text = "El servicio de los meseros y la calidad de la comida son excelentes, pero, la el restaurante " +
+                                "fue encontradao SUCIO por muchos clientes, se deben tomar medidas al respecto.";
+                        }
 
-                    }
-                    else if(resMeseros == "Mala" && resComida == "Fria" && resLimpieza == "Sucio")
-                    {
+                        else if (resMeseros == "Excelente" && resComida == "Mal servida" && resLimpieza == "Limpio")
+                        {
+                            txtConclusionGeneral.Text = "Tanto la limpieza, como el servicio proporcionado por los meseros, es optimo, sin embargo, " +
+                                "la comida se considero por los clientes 'MAL SERVIDA', se recomienda poner más atencion en el area de cocina.";
+                        }
 
-                    }
+                        else if (resMeseros == "Excelente" && resComida == "Mal servida" && resLimpieza == "Aceptable")
+                        {
+                            txtConclusionGeneral.Text = "Se recomienda que el restaurante se limpie con un poco más de constancia y que se ponga un poco más " +
+                                "de atencion en la presentación de la comida, puede que sean los causantes de las malas calificiones.";
+                        }
+
+                        else if (resMeseros == "Excelente" && resComida == "Mal servida" && resLimpieza == "Sucio")
+                        {
+                            txtConclusionGeneral.Text = "La LIMPIEZA del restaurante es INEFICIENTE y la COMIDA se encuentra MAL SERVIDA, se deben tomar medidas al " +
+                                "respecto para mejorar las calificaciones del restaurante.";
+                        }
+
+                        else if (resMeseros == "Excelente" && resComida == "Fria" && resLimpieza == "Limpio")
+                        {
+                            txtConclusionGeneral.Text = "La limpieza y el servicio son eficientes, mientras tanto, las personas reportaron " +
+                                "que recibieron su comida fria, mejore este punto para poder mejorar sus calificaciones.";
+                        }
+
+                        else if (resMeseros == "Excelente" && resComida == "Fria" && resLimpieza == "Aceptable")
+                        {
+                            txtConclusionGeneral.Text = "Los meseros realizan un trabajo impecable, pero la comida le llego fria a la mayoria de los clientes " +
+                                "y la limpieza no es muy buena, sus calificaciones podrian mejorar si mejora estos ultimos 2 puntos.";
+                        }
+
+                        else if (resMeseros == "Excelente" && resComida == "Fria" && resLimpieza == "Sucio")
+                        {
+                            txtConclusionGeneral.Text = "La comida se encontro mayormente fria y el restaurante sucio, es indispensble tomar medidas al respecto " +
+                                "para que puedan mejorar las calificaciones del restaurante.";
+                        }
+
+                        else if (resMeseros == "Buena" && resComida == "Excelente presentación" && resLimpieza == "Limpio")
+                        {
+                            txtConclusionGeneral.Text = "Se debe trabajar un poco en la calidad del servicio de los meseros,puede que así mejoren las calificaciones." +
+                                "La Limpieza y la comida son excelentes, puede que así mejoren las calificaciones.";
+                        }
+
+                        else if (resMeseros == "Buena" && resComida == "Excelente presentación" && resLimpieza == "Aceptable")
+                        {
+                            txtConclusionGeneral.Text = "La calidad del servicio de los meseros y la limpieza del restauranate no son muy buenas, si se mejoran " +
+                                "podrian subir las calificaciones positivas del restaurante.";
+                        }
+
+                        else if (resMeseros == "Buena" && resComida == "Excelente presentación" && resLimpieza == "Sucio")
+                        {
+                            txtConclusionGeneral.Text = "La calidad del servicio de los meseros y la limpieza del restauranate no son muy buenas, si se mejoran " +
+                                "podrian subir las calificaciones positivas del restaurante.";
+                        }
+
+                        else if (resMeseros == "Buena" && resComida == "Mal servida" && resLimpieza == "Limpio")
+                        {
+                            txtConclusionGeneral.Text = "La comida se encontro mayormente mal servida y el servicio de los meseros es bueno pero podria mejorar, " +
+                                "estos puntos pueden ser los causantes de las malas claificaciones obtenidas.";
+                        }
+
+                        else if (resMeseros == "Buena" && resComida == "Mal servida" && resLimpieza == "Aceptable")
+                        {
+                            txtConclusionGeneral.Text = "La comida se encontro mayormente mal servida y el servicio de los meseros es bueno pero podria mejorar, " +
+                                "estos puntos pueden ser los causantes de las malas claificaciones obtenidas.";
+                        }
+
+                        else if (resMeseros == "Buena" && resComida == "Mal servida" && resLimpieza == "Sucio")
+                        {
+                            txtConclusionGeneral.Text = "Se debe mejorar la limpieza del restaurante y el estado en que se sirve la comida, ademas, la calidad del " +
+                                "servicio de los meseros no es mala pero podria ser mejor. Si arregla estos puntos las calificaciones negativas podrian disminuir.";
+                        }
+
+                        else if (resMeseros == "Buena" && resComida == "Fria" && resLimpieza == "Limpio")
+                        {
+                            txtConclusionGeneral.Text = "La comida se entrego fria a los clientes y la calidad del servicio de los meseros fue buena " +
+                                "pero no excelente, si mejora estos puntos puede que las calificaciones hacia el restaurante mejoren..";
+                        }
+
+                        else if (resMeseros == "Buena" && resComida == "Fria" && resLimpieza == "Aceptable")
+                        {
+                            txtConclusionGeneral.Text = "La comida se entrego fria, la limpieza y el servicio no son tan malos, pero puede que esten causando malas calificaciones" +
+                                " hacia el restaurante.";
+                        }
+
+                        else if (resMeseros == "Buena" && resComida == "Fria" && resLimpieza == "Sucio")
+                        {
+                            txtConclusionGeneral.Text = "La COMIDA se entrego mayormente FRIA, el RESTAURANTE se encontro SUCIO, y el servicio de los meseros " +
+                                "no se resalta mucho, puede que esto este provocando las malas calificaciones.";
+                        }
+
+                        else if (resMeseros == "Mala" && resComida == "Excelente presentación" && resLimpieza == "Limpio")
+                        {
+                            txtConclusionGeneral.Text = "Aunque la comida es excelente y el restaurante se encontro mayormente limpio, el servicio de los meseros es malo, " +
+                                "esto puede estar provocando las malas calificaciones en el restaurante.";
+                        }
+
+                        else if (resMeseros == "Mala" && resComida == "Excelente presentación" && resLimpieza == "Aceptable")
+                        {
+                            txtConclusionGeneral.Text = "Aunque la comida es Excelente, la calificacion del servicio de los meseros es mala y la limpieza no es muy buena, " +
+                                "para mejorar las calificaciones debe mejorar la limpieza  y la atencion de los meseros.";
+                        }
+
+                        else if (resMeseros == "Mala" && resComida == "Excelente presentación" && resLimpieza == "Sucio")
+                        {
+                            txtConclusionGeneral.Text = "Aunque la comida es Excelente, si el restaurante esta sucio y el servicio de los meseros es malo, " +
+                                "las calificaciones negativas persistiran para le restaurante ";
+                        }
+
+                        else if (resMeseros == "Mala" && resComida == "Mal servida" && resLimpieza == "Limpio")
+                        {
+                            txtConclusionGeneral.Text = "La comida constantemente se sirve mal y el servicio de los meseros es malo, estas pueden ser las caudas de tener calificaciones negativas.";
+                        }
+
+                        else if (resMeseros == "Mala" && resComida == "Mal servida" && resLimpieza == "Aceptable")
+                        {
+                            txtConclusionGeneral.Text = "Posibles causas de las calificaciones negativas del restaurante: Mal servicio por parte de los meseros y que la comida no se ha " +
+                                "estado sirviendo en buenas condiciones.";
+                        }
+
+                        else if (resMeseros == "Mala" && resComida == "Mal servida" && resLimpieza == "Sucio")
+                        {
+                            txtConclusionGeneral.Text = "Es indispensable que los tres puntos de la encuesta (servicio de meseros, comida y limpieza) mejoren lo antes " +
+                                "posible, esto podria mejorar las calificaciones del restaurante.";
+                        }
+
+                        else if (resMeseros == "Mala" && resComida == "Fria" && resLimpieza == "Limpio")
+                        {
+                            txtConclusionGeneral.Text = "Es indispensable que el servicio de meseros y la comida mejoren lo antes " +
+                                "posible, esto podria mejorar las calificaciones del restaurante.";
+                        }
+
+                        else if (resMeseros == "Mala" && resComida == "Fria" && resLimpieza == "Aceptable")
+                        {
+                            txtConclusionGeneral.Text = "Es indispensable que los tres puntos de la encuesta (servicio de meseros, comida y limpieza) mejoren lo antes " +
+                                "posible, esto podria mejorar las calificaciones del restaurante.";
+                        }
+
+                        else
+                        {
+                            txtConclusionGeneral.Text = "La COMIDA se encontro mayormente FRIA, el RESTAURANTE SUCIO y el SERVICIO de los meseros es " +
+                                "MALO, es indispensble tomar medidas al respecto para que puedan mejorar las calificaciones del restaurante.";
+                        }
+                }
+
+                    pbAbajo.Location = new Point(435, cmdConfirmarCom.Location.Y + cmdConfirmarCom.Height +10);
+                    pbAbajo.Visible = true;
+
+                    pnResultados.Location = new Point(36, pnResEncabezado.Location.Y + pnResEncabezado.Height - 5);
+                    pnResultados.Visible = true;
+
+                    GuardarHisto();
                 }
                 else
                 {
                     MessageBox.Show("Verifique que los datos de las probabilidades esten correctos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
 
             }
         }
@@ -413,6 +569,48 @@ namespace Encuestas_Restaurante
             historial.ShowDialog();
         }
 
+        //HISTORIAL de Experimentos ----------------------------------------------------------------------
+        public void GuardarHisto()
+        {
+            //Agrega nueva fila
+            int n = historial.dgvHistorial.Rows.Add();
+
+            //Agregar datos de numeros pseudo
+            string datos = $"Xo = {numeros.txtSemilla.Text}\r\n" +
+                           $"a = {numeros.txtA.Text}\r\n" +
+                           $"c = {numeros.txtC.Text}\r\n" +
+                           $"m = {numeros.txtM.Text}\r\n";
+            historial.dgvHistorial.Rows[n].Cells[0].Value = datos;
+
+            //AGREGAR datos de los ANIMALES -----------------
+            {
+                //Guardar probabilidad de meseros, comida y limpieza
+                string proMese = "", proComi ="", proLim ="";
+                for (int i = 0; i < inter_meseros.Count; i++)
+                {
+                    proMese += $"{inter_meseros[i].info} = {inter_meseros[i].proba}\r\n";
+                    proComi += $"{inter_comida[i].info} = {inter_comida[i].proba}\r\n";
+                    proLim += $"{inter_limpieza[i].info} = {inter_limpieza[i].proba}\r\n";
+                }
+                historial.dgvHistorial.Rows[n].Cells[1].Value = proMese;
+                historial.dgvHistorial.Rows[n].Cells[2].Value = proComi;
+                historial.dgvHistorial.Rows[n].Cells[3].Value = proLim;
+
+                //Conclusion General
+                historial.dgvHistorial.Rows[n].Cells[4].Value = txtConclusionGeneral.Text;
+                ////Imprimir probabilidad de Comida
+                //string proMese = "";
+                //for (int i = 0; i < inter_comida.Count; i++)
+                //{
+                //    proMese += $"{inter_comida[i].info} = {inter_comida[i].proba}\r\n";
+                //}
+                //historial.dgvHistorial.Rows[n].Cells[1].Value = proMese;
+
+
+            }
+}
+
+
         private void cmdCerrar_Click(object sender, EventArgs e)
         {
             Close();
@@ -430,10 +628,6 @@ namespace Encuestas_Restaurante
         
         public void LimitesComida()
         {
-            //Datos del estado de la comida
-            /*Fría
-              Mal servida
-              Exelente presentacion*/
             datos = new Datos_Intervalos();
             datos.info = "Fria";
             datos.proba = comidaF;
@@ -459,10 +653,6 @@ namespace Encuestas_Restaurante
 
         public void LimitesMeseros()
         {
-            //Datos del estado de la comida
-            /*Buena
-Mala
-Excelente*/
             datos = new Datos_Intervalos();
             datos.info = "Buena";
             datos.proba = meserosB;
@@ -539,6 +729,7 @@ Excelente*/
 
                 if (suma == 1)
                 {
+                    inter_meseros.Clear();
                     Meseros = true;
                     Confirmado(cmdConfirmarSer);
                     LimitesMeseros();
@@ -586,6 +777,7 @@ Excelente*/
 
                 if (suma == 1)
                 {
+                    inter_comida.Clear();
                     Comida = true;
                     Confirmado(cmdConfirmarCom);
                     LimitesComida();
@@ -633,6 +825,7 @@ Excelente*/
 
                 if (suma == 1)
                 {
+                    inter_limpieza.Clear();
                     Limpieza = true;
                     Confirmado(cmdConfirmarLimpi);
                     LimitesLimpieza();
@@ -664,10 +857,58 @@ Excelente*/
         private void Desconfirmado(Button boton)
         {
             boton.BackColor = Color.FromArgb(242, 145, 153);
+            pnResultados.Visible = false;
         }
 
-        //Validaciones de TextBox Meseros
-        private void txtMeserosM_Validating(object sender, CancelEventArgs e)
+        private void cmdIntervalos_Click(object sender, EventArgs e)
+        {
+            if (Meseros && Limpieza && Comida)
+            {
+                MostrarIntervalos();
+                intervalos.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Primero confirme las probabilidades.", "ATENCION", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        
+        public void MostrarIntervalos()
+        {
+            //Limpia las filas de las tablas de animales y de agua
+            intervalos.dgvMeseros.Rows.Clear();
+            intervalos.dgvComida.Rows.Clear();
+            intervalos.dgvLimpieza.Rows.Clear();
+
+            for (int i = 0; i < inter_meseros.Count; i++)
+            {
+                int n = intervalos.dgvMeseros.Rows.Add();
+                intervalos.dgvMeseros.Rows[n].Cells[0].Value = inter_meseros[i].info;
+                intervalos.dgvMeseros.Rows[n].Cells[1].Value = inter_meseros[i].proba;
+                intervalos.dgvMeseros.Rows[n].Cells[2].Value = inter_meseros[i].lim_inferior;
+                intervalos.dgvMeseros.Rows[n].Cells[3].Value = inter_meseros[i].lim_superior;
+            }
+            for (int i = 0; i < inter_comida.Count; i++)
+            {
+                int m = intervalos.dgvComida.Rows.Add();
+                intervalos.dgvComida.Rows[m].Cells[0].Value = inter_comida[i].info;
+                intervalos.dgvComida.Rows[m].Cells[1].Value = inter_comida[i].proba;
+                intervalos.dgvComida.Rows[m].Cells[2].Value = inter_comida[i].lim_inferior;
+                intervalos.dgvComida.Rows[m].Cells[3].Value = inter_comida[i].lim_superior;
+            }
+            for (int i = 0; i < inter_limpieza.Count; i++)
+            {
+                int w = intervalos.dgvLimpieza.Rows.Add();
+                intervalos.dgvLimpieza.Rows[w].Cells[0].Value = inter_limpieza[i].info;
+                intervalos.dgvLimpieza.Rows[w].Cells[1].Value = inter_limpieza[i].proba;
+                intervalos.dgvLimpieza.Rows[w].Cells[2].Value = inter_limpieza[i].lim_inferior;
+                intervalos.dgvLimpieza.Rows[w].Cells[3].Value = inter_limpieza[i].lim_superior;
+            }
+
+        }
+
+            //Validaciones de TextBox Meseros
+            private void txtMeserosM_Validating(object sender, CancelEventArgs e)
         {
             validarMeseros = validacion.ValidarNumeros(txtMeserosM, error, e);
         }
@@ -680,6 +921,7 @@ Excelente*/
         private void txtMeserosM_TextChanged(object sender, EventArgs e)
         {
             Desconfirmado(cmdConfirmarSer);
+            Meseros = false;
         }
 
         private void txtMeserosE_Validating(object sender, CancelEventArgs e)
@@ -695,6 +937,7 @@ Excelente*/
         private void txtMeserosE_TextChanged(object sender, EventArgs e)
         {
             Desconfirmado(cmdConfirmarSer);
+            Meseros = false;
         }
 
         private void txtMeserosB_Validated(object sender, EventArgs e)
@@ -710,8 +953,8 @@ Excelente*/
         private void txtMeserosB_TextChanged(object sender, EventArgs e)
         {
             Desconfirmado(cmdConfirmarSer);
+            Meseros = false;
         }
-
 
         //Validaciones de TextBox Comida
         private void txtComidaF_Validating(object sender, CancelEventArgs e)
@@ -727,6 +970,7 @@ Excelente*/
         private void txtComidaF_TextChanged(object sender, EventArgs e)
         {
             Desconfirmado(cmdConfirmarCom);
+            Comida = false;
         }
 
         private void txtComidaM_Validating(object sender, CancelEventArgs e)
@@ -742,6 +986,7 @@ Excelente*/
         private void txtComidaM_TextChanged(object sender, EventArgs e)
         {
             Desconfirmado(cmdConfirmarCom);
+            Comida = false;
         }
 
         private void txtComidaE_Validating(object sender, CancelEventArgs e)
@@ -757,6 +1002,7 @@ Excelente*/
         private void txtComidaE_TextChanged(object sender, EventArgs e)
         {
             Desconfirmado(cmdConfirmarCom);
+            Comida = false;
         }
 
 
@@ -774,6 +1020,7 @@ Excelente*/
         private void txtLimpiezaS_TextChanged(object sender, EventArgs e)
         {
             Desconfirmado(cmdConfirmarLimpi);
+            Limpieza = false;
         }
 
         private void txtLimpiezaL_Validating(object sender, CancelEventArgs e)
@@ -789,6 +1036,7 @@ Excelente*/
         private void txtLimpiezaL_TextChanged(object sender, EventArgs e)
         {
             Desconfirmado(cmdConfirmarLimpi);
+            Limpieza = false;
         }
 
         private void txtLimpiezaA_Validating(object sender, CancelEventArgs e)
@@ -804,6 +1052,7 @@ Excelente*/
         private void txtLimpiezaA_TextChanged(object sender, EventArgs e)
         {
             Desconfirmado(cmdConfirmarLimpi);
+            Limpieza = false;
         }
 
 

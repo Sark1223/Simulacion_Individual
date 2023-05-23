@@ -51,6 +51,7 @@
             this.pnProblema = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
             this.rdDatos = new ns1.BunifuElipse(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -88,7 +89,8 @@
             this.bunifuSeparator1 = new ns1.BunifuSeparator();
             this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pbAbajo = new System.Windows.Forms.PictureBox();
+            this.cmdIntervalos = new System.Windows.Forms.Button();
             this.cmdSimularEncuestas = new System.Windows.Forms.Button();
             this.error = new System.Windows.Forms.ErrorProvider(this.components);
             this.rdConfirmar1 = new ns1.BunifuElipse(this.components);
@@ -98,7 +100,6 @@
             this.pnResultados = new System.Windows.Forms.Panel();
             this.pnConclusionG = new System.Windows.Forms.Panel();
             this.txtConclusionGeneral = new System.Windows.Forms.TextBox();
-            this.separador = new ns1.BunifuSeparator();
             this.lblComida = new System.Windows.Forms.Label();
             this.lblLimpieza = new System.Windows.Forms.Label();
             this.lblMeseros = new System.Windows.Forms.Label();
@@ -109,11 +110,11 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.pnResEncabezado = new System.Windows.Forms.Panel();
             this.lblTitleExperimento = new ns1.BunifuCustomLabel();
             this.pnexperimento = new System.Windows.Forms.Panel();
             this.rdConclusionG = new ns1.BunifuElipse(this.components);
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.rdIntervalos = new ns1.BunifuElipse(this.components);
             this.pnEncabezado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).BeginInit();
             this.panel1.SuspendLayout();
@@ -121,12 +122,14 @@
             this.pnDatos.SuspendLayout();
             this.pnProblema.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAbajo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.pnResultados.SuspendLayout();
             this.pnConclusionG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
-            this.panel8.SuspendLayout();
+            this.pnResEncabezado.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnEncabezado
@@ -162,6 +165,7 @@
             this.label1.Size = new System.Drawing.Size(357, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "Encuestas de restaurante";
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mover);
             // 
             // rdForma
             // 
@@ -197,7 +201,7 @@
             this.cmdHistorial.ForeColor = System.Drawing.Color.Black;
             this.cmdHistorial.IdleBorderThickness = 1;
             this.cmdHistorial.IdleCornerRadius = 20;
-            this.cmdHistorial.IdleFillColor = System.Drawing.Color.WhiteSmoke;
+            this.cmdHistorial.IdleFillColor = System.Drawing.Color.White;
             this.cmdHistorial.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
             this.cmdHistorial.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(193)))), ((int)(((byte)(0)))));
             this.cmdHistorial.Location = new System.Drawing.Point(669, 54);
@@ -362,11 +366,24 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(190)))), ((int)(((byte)(234)))));
+            this.panel4.Controls.Add(this.label19);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 1928);
+            this.panel4.Location = new System.Drawing.Point(0, 1948);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(931, 25);
             this.panel4.TabIndex = 11;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label19.Location = new System.Drawing.Point(390, 3);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(195, 21);
+            this.label19.TabIndex = 4;
+            this.label19.Text = "@Karla Santos 21212050";
             // 
             // rdDatos
             // 
@@ -848,7 +865,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.pbAbajo);
+            this.panel2.Controls.Add(this.cmdIntervalos);
             this.panel2.Controls.Add(this.cmdSimularEncuestas);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.bunifuSeparator1);
@@ -892,21 +910,33 @@
             this.panel2.Size = new System.Drawing.Size(931, 330);
             this.panel2.TabIndex = 0;
             // 
-            // button1
+            // pbAbajo
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.YellowGreen;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.button1.Location = new System.Drawing.Point(179, 275);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(278, 31);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "Mostrar Intervalos";
-            this.button1.UseVisualStyleBackColor = false;
+            this.pbAbajo.Image = global::Encuestas_Restaurante.Properties.Resources.ezgif_com_gif_maker__1_;
+            this.pbAbajo.Location = new System.Drawing.Point(435, 256);
+            this.pbAbajo.Name = "pbAbajo";
+            this.pbAbajo.Size = new System.Drawing.Size(75, 60);
+            this.pbAbajo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAbajo.TabIndex = 49;
+            this.pbAbajo.TabStop = false;
+            this.pbAbajo.Visible = false;
+            // 
+            // cmdIntervalos
+            // 
+            this.cmdIntervalos.BackColor = System.Drawing.Color.White;
+            this.cmdIntervalos.FlatAppearance.BorderSize = 0;
+            this.cmdIntervalos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.YellowGreen;
+            this.cmdIntervalos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.cmdIntervalos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdIntervalos.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdIntervalos.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.cmdIntervalos.Location = new System.Drawing.Point(112, 275);
+            this.cmdIntervalos.Name = "cmdIntervalos";
+            this.cmdIntervalos.Size = new System.Drawing.Size(278, 31);
+            this.cmdIntervalos.TabIndex = 48;
+            this.cmdIntervalos.Text = "Mostrar Intervalos";
+            this.cmdIntervalos.UseVisualStyleBackColor = false;
+            this.cmdIntervalos.Click += new System.EventHandler(this.cmdIntervalos_Click);
             // 
             // cmdSimularEncuestas
             // 
@@ -917,7 +947,7 @@
             this.cmdSimularEncuestas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdSimularEncuestas.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdSimularEncuestas.ForeColor = System.Drawing.Color.IndianRed;
-            this.cmdSimularEncuestas.Location = new System.Drawing.Point(536, 275);
+            this.cmdSimularEncuestas.Location = new System.Drawing.Point(569, 275);
             this.cmdSimularEncuestas.Name = "cmdSimularEncuestas";
             this.cmdSimularEncuestas.Size = new System.Drawing.Size(278, 31);
             this.cmdSimularEncuestas.TabIndex = 38;
@@ -953,15 +983,15 @@
             // pnResultados
             // 
             this.pnResultados.Controls.Add(this.pnConclusionG);
-            this.pnResultados.Controls.Add(this.separador);
             this.pnResultados.Controls.Add(this.lblComida);
             this.pnResultados.Controls.Add(this.lblLimpieza);
             this.pnResultados.Controls.Add(this.lblMeseros);
             this.pnResultados.Controls.Add(this.dgvResultados);
-            this.pnResultados.Location = new System.Drawing.Point(36, 674);
+            this.pnResultados.Location = new System.Drawing.Point(36, 673);
             this.pnResultados.Name = "pnResultados";
-            this.pnResultados.Size = new System.Drawing.Size(867, 1221);
+            this.pnResultados.Size = new System.Drawing.Size(867, 1275);
             this.pnResultados.TabIndex = 44;
+            this.pnResultados.Visible = false;
             // 
             // pnConclusionG
             // 
@@ -969,7 +999,7 @@
             this.pnConclusionG.Controls.Add(this.txtConclusionGeneral);
             this.pnConclusionG.Location = new System.Drawing.Point(76, 111);
             this.pnConclusionG.Name = "pnConclusionG";
-            this.pnConclusionG.Size = new System.Drawing.Size(716, 63);
+            this.pnConclusionG.Size = new System.Drawing.Size(716, 108);
             this.pnConclusionG.TabIndex = 13;
             // 
             // txtConclusionGeneral
@@ -978,26 +1008,14 @@
             this.txtConclusionGeneral.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtConclusionGeneral.Font = new System.Drawing.Font("Candara Light", 14F, System.Drawing.FontStyle.Bold);
             this.txtConclusionGeneral.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtConclusionGeneral.Location = new System.Drawing.Point(16, 6);
+            this.txtConclusionGeneral.Location = new System.Drawing.Point(16, 10);
             this.txtConclusionGeneral.Multiline = true;
             this.txtConclusionGeneral.Name = "txtConclusionGeneral";
             this.txtConclusionGeneral.ReadOnly = true;
-            this.txtConclusionGeneral.Size = new System.Drawing.Size(686, 52);
+            this.txtConclusionGeneral.Size = new System.Drawing.Size(686, 89);
             this.txtConclusionGeneral.TabIndex = 0;
             this.txtConclusionGeneral.Text = "aaa";
             this.txtConclusionGeneral.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // separador
-            // 
-            this.separador.BackColor = System.Drawing.Color.Transparent;
-            this.separador.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(226)))), ((int)(((byte)(190)))), ((int)(((byte)(234)))));
-            this.separador.LineThickness = 1;
-            this.separador.Location = new System.Drawing.Point(63, 175);
-            this.separador.Name = "separador";
-            this.separador.Size = new System.Drawing.Size(750, 35);
-            this.separador.TabIndex = 14;
-            this.separador.Transparency = 200;
-            this.separador.Vertical = false;
             // 
             // lblComida
             // 
@@ -1071,7 +1089,7 @@
             this.dgvResultados.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvResultados.EnableHeadersVisualStyles = false;
             this.dgvResultados.GridColor = System.Drawing.Color.MediumVioletRed;
-            this.dgvResultados.Location = new System.Drawing.Point(25, 212);
+            this.dgvResultados.Location = new System.Drawing.Point(25, 237);
             this.dgvResultados.Name = "dgvResultados";
             this.dgvResultados.ReadOnly = true;
             this.dgvResultados.RowHeadersVisible = false;
@@ -1122,15 +1140,15 @@
             this.Column1.ReadOnly = true;
             this.Column1.Width = 109;
             // 
-            // panel8
+            // pnResEncabezado
             // 
-            this.panel8.Controls.Add(this.lblTitleExperimento);
-            this.panel8.Controls.Add(this.pnexperimento);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 641);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(931, 38);
-            this.panel8.TabIndex = 93;
+            this.pnResEncabezado.Controls.Add(this.lblTitleExperimento);
+            this.pnResEncabezado.Controls.Add(this.pnexperimento);
+            this.pnResEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnResEncabezado.Location = new System.Drawing.Point(0, 641);
+            this.pnResEncabezado.Name = "pnResEncabezado";
+            this.pnResEncabezado.Size = new System.Drawing.Size(931, 38);
+            this.pnResEncabezado.TabIndex = 93;
             // 
             // lblTitleExperimento
             // 
@@ -1156,12 +1174,10 @@
             this.rdConclusionG.ElipseRadius = 20;
             this.rdConclusionG.TargetControl = this.pnConclusionG;
             // 
-            // panel5
+            // rdIntervalos
             // 
-            this.panel5.Location = new System.Drawing.Point(319, 1902);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(249, 26);
-            this.panel5.TabIndex = 94;
+            this.rdIntervalos.ElipseRadius = 21;
+            this.rdIntervalos.TargetControl = this.cmdIntervalos;
             // 
             // frmProblema
             // 
@@ -1170,14 +1186,14 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(948, 700);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.pnResEncabezado);
             this.Controls.Add(this.pnResultados);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pnProblema);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmProblema";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -1191,16 +1207,19 @@
             this.pnDatos.PerformLayout();
             this.pnProblema.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAbajo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             this.pnResultados.ResumeLayout(false);
             this.pnResultados.PerformLayout();
             this.pnConclusionG.ResumeLayout(false);
             this.pnConclusionG.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.pnResEncabezado.ResumeLayout(false);
+            this.pnResEncabezado.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1271,24 +1290,25 @@
         private System.Windows.Forms.Panel pnResultados;
         public System.Windows.Forms.DataGridView dgvResultados;
         private ns1.BunifuElipse rdSimular;
-        public System.Windows.Forms.Panel panel8;
+        public System.Windows.Forms.Panel pnResEncabezado;
         public ns1.BunifuCustomLabel lblTitleExperimento;
         public System.Windows.Forms.Panel pnexperimento;
         private System.Windows.Forms.Panel pnConclusionG;
         private System.Windows.Forms.TextBox txtConclusionGeneral;
-        private ns1.BunifuSeparator separador;
         public System.Windows.Forms.Label lblComida;
         public System.Windows.Forms.Label lblLimpieza;
         public System.Windows.Forms.Label lblMeseros;
         private ns1.BunifuElipse rdConclusionG;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button cmdIntervalos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dia;
         private System.Windows.Forms.DataGridViewTextBoxColumn a;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private ns1.BunifuElipse rdIntervalos;
+        private System.Windows.Forms.PictureBox pbAbajo;
+        private System.Windows.Forms.Label label19;
     }
 }
 

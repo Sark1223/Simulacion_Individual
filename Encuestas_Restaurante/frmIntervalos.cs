@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Encuestas_Restaurante
 {
-    public partial class frmHistorial : Form
+    public partial class frmIntervalos : Form
     {
-        public frmHistorial()
+        public frmIntervalos()
         {
             InitializeComponent();
         }
@@ -30,7 +30,7 @@ namespace Encuestas_Restaurante
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
+        private void cmdCerrar_Click(object sender, EventArgs e)
         {
             Close();
         }

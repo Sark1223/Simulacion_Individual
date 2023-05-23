@@ -83,6 +83,16 @@ namespace Encuestas_Restaurante.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ezgif_com_gif_maker__1_ {
+            get {
+                object obj = ResourceManager.GetObject("ezgif.com-gif-maker (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap frecuencia {
             get {
                 object obj = ResourceManager.GetObject("frecuencia", resourceCulture);

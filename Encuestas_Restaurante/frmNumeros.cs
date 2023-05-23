@@ -220,7 +220,7 @@ namespace Encuestas_Restaurante
 
                     if(respuesta == DialogResult.Yes)
                     {
-                        pruebas.Show();
+                        pruebas.ShowDialog();
                     }
                 }
             }

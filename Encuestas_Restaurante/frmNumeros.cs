@@ -336,10 +336,12 @@ namespace Encuestas_Restaurante
 
             if (Xo <= Z2)
             {
-                pruebas.lblSigFrecuencia.Text = $"Significancia\r\nZa = {Z2}";
-                //opciones.txtMesajeDatos.Text = "Los numeros que se generaron se encuentran distribuidos uniformemente.";
                 no_pruebas++;
                 pruebas.lblResFrecuencia.Text = "La prueba a sido acreditada";
+
+                pruebas.lblSigFrecuencia.Text = $"Significancia\r\nZa = {Z2}";
+                //opciones.txtMesajeDatos.Text = "Los numeros que se generaron se encuentran distribuidos uniformemente.";
+                
             }
             else
             {
@@ -347,7 +349,7 @@ namespace Encuestas_Restaurante
                 pruebas.lblResFrecuencia.Text = "Los números pseudo-aleaorios han fracasado la prueba";
             }
 
-            pruebas.lblResFrecuencia.Location = new Point((pruebas.Width / 2) - pruebas.lblResFrecuencia.Width / 2, 545);
+            pruebas.lblResFrecuencia.Location = new Point((pruebas.Width / 2) - pruebas.lblResFrecuencia.Width / 2, 249);
         }
 
         string[] res = new string[1050];

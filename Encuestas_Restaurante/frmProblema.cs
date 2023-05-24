@@ -858,6 +858,7 @@ namespace Encuestas_Restaurante
         {
             boton.BackColor = Color.FromArgb(242, 145, 153);
             pnResultados.Visible = false;
+            pbAbajo.Visible = false;
         }
 
         private void cmdIntervalos_Click(object sender, EventArgs e)
